@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اپلیکیشن آرتیلو — دنیای هنر، موسیقی و پادکست</title>
+  <meta name="description" content="آرتیلو، پلتفرم تخصصی شنیدن موسیقی، پادکست‌های هنری و تماشای ویدیوها با پلیر اختصاصی.">
+  <meta name="theme-color" content="#0a0c14">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="topbar">
+    <div class="wrap">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">AM</span>
+        <span class="nav-name">Ali Miri</span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link" data-i18n="nav.home">خانه</a>
+        <a href="kaghaz.html" class="nav-link" data-i18n="nav.kaghaz">کاغذ</a>
+        <a href="artilo.html" class="nav-link active" data-i18n="nav.artilo">آرتیلو</a>
+        <a href="index.html#about" class="nav-link" data-i18n="nav.about">توسعه‌دهنده</a>
+        <a href="index.html#contact" class="nav-link" data-i18n="nav.contact">تماس</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language Toggle">
+          <button type="button" class="lang-btn" data-lang="fa" aria-pressed="true">فا</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="mobile-toggle" aria-label="Toggle Navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ APP HERO ============ -->
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="page-hero-grid">
+          <div>
+            <div class="badge" style="color: var(--accent-artilo); border-color: rgba(244, 63, 94, 0.25);">
+              <span class="badge-dot" style="background: var(--accent-artilo); box-shadow: 0 0 8px var(--accent-artilo);"></span>
+              <span data-i18n="artiloPage.heroBadge">پلتفرم هنر و صدا</span>
+            </div>
+
+            <h1 class="hero-title" style="margin-bottom: 16px;" data-i18n="artiloPage.title">آرتیلو (Artilo)</h1>
+            <p class="hero-subtitle" data-i18n="artiloPage.subtitle">
+              پلتفرم تخصصی شنیدن موسیقی، پادکست‌های هنری و تماشای ویدیو با پلیر پیشرفته.
+            </p>
+
+            <div class="hero-actions">
+              <a href="https://myket.ir" target="_blank" rel="noopener" class="btn btn-artilo" data-i18n="app.download">دانلود مستقیم از مایکت</a>
+              <a href="index.html#apps" class="btn btn-secondary" data-i18n="nav.home">بازگشت به خانه</a>
+            </div>
+          </div>
+
+          <div style="text-align: center;">
+            <img src="assets/artilo-logo.png" alt="لوگوی آرتیلو" class="app-hero-logo">
+          </div>
+        </div>
+
+        <!-- Spec Cards -->
+        <div class="specs-grid">
+          <div class="spec-card">
+            <h4 data-i18n="artiloPage.spec1Title">پلیر اختصاصی حرفه‌ای</h4>
+            <p data-i18n="artiloPage.spec1Desc">کنترل کامل بر پخش صوت، تنظیم سرعت، مدیریت صف پخش و یادآوری آخرین زمان شنیده شده.</p>
+          </div>
+
+          <div class="spec-card">
+            <h4 data-i18n="artiloPage.spec2Title">آرشیو پادکست و موزیک</h4>
+            <p data-i18n="artiloPage.spec2Desc">دسته‌بندی منظم پادکست‌های هنری، اپیزودها، برنامه‌های ویدیویی و موزیک‌های برگزیده.</p>
+          </div>
+
+          <div class="spec-card">
+            <h4 data-i18n="artiloPage.spec3Title">طراحی رابط کاربری چشم‌نواز</h4>
+            <p data-i18n="artiloPage.spec3Desc">تم تاریک و مدرن، انیمیشن‌های روان و انتقال‌های سریع جهت استفاده طولانی‌مدت بدون خستگی چشم.</p>
+          </div>
+
+          <div class="spec-card">
+            <h4 data-i18n="artiloPage.spec4Title">عملکرد بالا و بهینه</h4>
+            <p data-i18n="artiloPage.spec4Desc">کشینگ هوشمند محتوای صوتی، لودینگ سریع و مدیریت بهینه حافظه رم در سیستم‌عامل اندروید.</p>
+          </div>
+        </div>
+
+        <!-- Screenshots Showcase -->
+        <div style="margin-top: 60px;">
+          <div class="section-eyebrow">گالری تصاویر</div>
+          <h2 class="section-title">محیط اپلیکیشن آرتیلو</h2>
+
+          <div class="gallery-grid" style="max-width: 900px; margin: 0 auto;">
+            <div class="screenshot-item"><img src="assets/artilo/1.png" alt="اسکرین شات ۱ آرتیلو"></div>
+            <div class="screenshot-item"><img src="assets/artilo/2.png" alt="اسکرین شات ۲ آرتیلو"></div>
+            <div class="screenshot-item"><img src="assets/artilo/3.png" alt="اسکرین شات ۳ آرتیلو"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="logo-icon">AM</span>
+            <span class="nav-name">Ali Miri</span>
+          </div>
+          <p data-i18n="footer.desc">توسعه‌دهنده اپلیکیشن‌های موبایل با فلاتر و اندروید.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer.col1">ناوبری</h5>
+          <a href="index.html" data-i18n="nav.home">خانه</a>
+          <a href="index.html#about" data-i18n="nav.about">توسعه‌دهنده</a>
+          <a href="index.html#contact" data-i18n="nav.contact">تماس</a>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer.col2">اپلیکیشن‌ها</h5>
+          <a href="kaghaz.html" data-i18n="nav.kaghaz">کاغذ</a>
+          <a href="artilo.html" data-i18n="nav.artilo">آرتیلو</a>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer.col3">شبکه‌ها</h5>
+          <a href="https://github.com/alimiri" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://t.me/alimiri_dev" target="_blank" rel="noopener">Telegram</a>
+          <a href="mailto:contact@alimiri.dev">Email</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer.copy">© ۲۰۲۴ علی میری. تمامی حقوق محفوظ است.</span>
+        <span data-i18n="footer.note">طراحی‌شده با فلاتر و استانداردهای وب مدرن.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,300 +1,317 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ali Miri</title>
-<meta name="description" content="Ali Miri — Android app developer. Kaghaz and Artilo, two Persian apps on Myket.">
-<meta name="theme-color" content="#b23a2f">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>علی میری — توسعه‌دهنده فلاتر و اندروید</title>
+  <meta name="description" content="علی میری، توسعه‌دهنده اپلیکیشن‌های اندرویدی با فلاتر. توسعه‌دهنده کاغذ (مدیریت کلاس) و آرتیلو (هنر و پادکست).">
+  <meta name="theme-color" content="#0a0c14">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ============ HEADER ============ -->
-<header class="topbar">
-  <div class="wrap">
-    <a href="#" class="nav-logo">
-      <span class="logo-mark">A</span>
-      <span class="nav-name">Ali Miri</span>
-    </a>
-    <nav class="nav-links">
-      <a href="#about" data-i18n="nav.about">درباره</a>
-      <a href="#work" data-i18n="nav.work">کارها</a>
-      <a href="#contact" data-i18n="nav.contact">تماس</a>
-    </nav>
-    <div class="lang-toggle" role="group" aria-label="Language">
-      <button type="button" data-lang="fa" aria-pressed="true">فا</button>
-      <button type="button" data-lang="en" aria-pressed="false">EN</button>
-    </div>
-  </div>
-</header>
-
-<main>
-
-  <!-- ============ HERO ============ -->
-  <section class="hero">
-    <div class="hero-bg">
-      <div class="hero-shape hero-shape-1"></div>
-      <div class="hero-shape hero-shape-2"></div>
-    </div>
+  <!-- ============ NAVBAR ============ -->
+  <header class="topbar">
     <div class="wrap">
-      <div class="hero-content">
-        <div class="hero-badge" data-i18n="hero.badge">توسعه‌دهنده اپلیکیشن</div>
-        <h1>
-          <span data-i18n="hero.line1">طراحی،</span>
-          <span class="mark" data-i18n="hero.mark">کدنویسی</span>
-          <svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M4 12 C 50 4, 150 4, 196 12" />
-          </svg>
-          <span data-i18n="hero.line2">، انتشار.</span>
-        </h1>
-        <p class="lede" data-i18n="hero.lede">
-          ساخت اپلیکیشن‌های اندرویدی با فلاتر — از طراحی رابط کاربری تا انتشار در مایکت.
-        </p>
-        <div class="hero-cta">
-          <a href="#work" class="btn btn-primary" data-i18n="hero.cta">مشاهده کارها</a>
-          <a href="#contact" class="btn btn-outline" data-i18n="hero.contact">ارتباط با من</a>
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">AM</span>
+        <span class="nav-name">Ali Miri</span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active" data-i18n="nav.home">خانه</a>
+        <a href="kaghaz.html" class="nav-link" data-i18n="nav.kaghaz">کاغذ</a>
+        <a href="artilo.html" class="nav-link" data-i18n="nav.artilo">آرتیلو</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">توسعه‌دهنده</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">تماس</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language Toggle">
+          <button type="button" class="lang-btn" data-lang="fa" aria-pressed="true">فا</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
         </div>
-      </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-number">۲+</span>
-          <span class="stat-label" data-i18n="hero.stat1">اپلیکیشن</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">۱۰۰٪</span>
-          <span class="stat-label" data-i18n="hero.stat2">تک‌نفره</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">∞</span>
-          <span class="stat-label" data-i18n="hero.stat3">علاقه</span>
-        </div>
+        <button class="mobile-toggle" aria-label="Toggle Navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- ============ ABOUT ============ -->
-  <section id="about">
-    <div class="wrap">
-      <div class="eyebrow" data-i18n="about.eyebrow">درباره من</div>
-      <div class="about-grid reveal">
-        <div class="about-photo-wrapper">
-          <div class="about-photo no-img" id="aboutPhoto">
-            <img src="assets/profile.jpg" alt="Ali Miri" loading="lazy"
-                 onerror="this.parentElement.classList.add('no-img'); this.remove();"
-                 onload="this.parentElement.classList.remove('no-img');">
+  <main>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="badge">
+              <span class="badge-dot"></span>
+              <span data-i18n="hero.badge">توسعه‌دهنده فلاتر و اندروید</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="gradient-text" data-i18n="hero.title1">خلق اپلیکیشن‌های</span><br>
+              <span class="highlight-text" data-i18n="hero.titleMark">کاربردی و مدرن</span>
+            </h1>
+
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
+              طراحی، کدنویسی و انتشار اپلیکیشن‌های اندرویدی با معماری تمیز و فلاتر. تمرکز روی تجربه کاربری بی‌نقص و عملکرد فوق‌العاده.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#apps" class="btn btn-primary" data-i18n="hero.ctaPrimary">مشاهده اپلیکیشن‌ها</a>
+              <a href="#contact" class="btn btn-secondary" data-i18n="hero.ctaSecondary">ارتباط با من</a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-val" data-i18n="hero.stat1Val">۲+</span>
+                <span class="stat-lbl" data-i18n="hero.stat1Lbl">اپلیکیشن منتشرشده</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val" data-i18n="hero.stat2Val">۱۰۰٪</span>
+                <span class="stat-lbl" data-i18n="hero.stat2Lbl">رضایت و کیفیت</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val" data-i18n="hero.stat3Val">Flutter</span>
+                <span class="stat-lbl" data-i18n="hero.stat3Lbl">تکنولوژی اصلی</span>
+              </div>
+            </div>
           </div>
-          <div class="about-photo-accent"></div>
+
+          <!-- Hero App Stack Cards -->
+          <div class="hero-visual">
+            <a href="kaghaz.html" class="preview-card">
+              <img src="assets/kaghaz-logo.png" alt="Kaghaz Logo" class="preview-icon">
+              <div class="preview-info">
+                <h4 data-i18n="preview.kaghazTitle">کاغذ (Kaghaz)</h4>
+                <p data-i18n="preview.kaghazDesc">مدیریت کلاس، حضور و غیاب و نمرات معلمان</p>
+              </div>
+              <span class="preview-tag tag-kaghaz" data-i18n="preview.kaghazTag">آموزشی</span>
+            </a>
+
+            <a href="artilo.html" class="preview-card">
+              <img src="assets/artilo-logo.png" alt="Artilo Logo" class="preview-icon">
+              <div class="preview-info">
+                <h4 data-i18n="preview.artiloTitle">آرتیلو (Artilo)</h4>
+                <p data-i18n="preview.artiloDesc">پلتفرم هنر، موسیقی و پادکست‌های صوتی</p>
+              </div>
+              <span class="preview-tag tag-artilo" data-i18n="preview.artiloTag">رسانه</span>
+            </a>
+          </div>
+
         </div>
-        <div class="about-content">
-          <p class="about-text" data-i18n="about.bio">
-            علی میری هستم، توسعه‌دهنده اپلیکیشن‌های اندرویدی. علاقه‌مند به ساخت تجربه‌های کاربری بهتر با فلاتر. دو اپلیکیشن فارسی‌زبان — کاغذ، ابزاری برای مدیریت کلاس معلم‌ها، و آرتیلو، پلتفرمی برای هنر، موسیقی و پادکست — روی مایکت منتشر شده.
+      </div>
+    </section>
+
+    <!-- ============ APPS SHOWCASE ============ -->
+    <section id="apps" class="app-showcase">
+      <div class="wrap">
+        <div class="section-eyebrow" data-i18n="apps.eyebrow">محصولات منتشرشده</div>
+        <h2 class="section-title" data-i18n="apps.title">اپلیکیشن‌های من در مایکت</h2>
+        <p class="section-desc" data-i18n="apps.desc">
+          محصولات نرم‌افزاری مستقل که با معماری تمیز و فلاتر پیاده‌سازی شده و در دسترس کاربران قرار گرفته‌اند.
+        </p>
+
+        <!-- Kaghaz Card -->
+        <article class="app-card-featured">
+          <div class="card-header-row">
+            <div class="app-brand">
+              <img src="assets/kaghaz-logo.png" alt="کاغذ" class="app-logo-img">
+              <div class="app-meta">
+                <h3 data-i18n="kaghaz.title">کاغذ — دستیار هوشمند معلمان</h3>
+                <span class="app-category kaghaz" data-i18n="kaghaz.tagline">مدیریت کلاس، حضور و غیاب و ثبت نمرات</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="kaghaz.html" class="btn btn-secondary" data-i18n="app.details">جزئیات کامل</a>
+              <a href="https://myket.ir" target="_blank" rel="noopener" class="btn btn-kaghaz" data-i18n="app.download">دانلود مستقیم از مایکت</a>
+            </div>
+          </div>
+
+          <p class="app-card-desc" data-i18n="kaghaz.desc">
+            کاغذ یک اپلیکیشن تخصصی برای معلم‌هاست که تمام نیازهای کلاسی اعم از ثبت حضور و غیاب، مدیریت نمرات مستمر و پایانی، و ابزارهای کاربردی مثل تایمر کلاس، گروه‌بندی تصادفی و قرعه‌کشی را در قالبی ساده و شکیل فراهم می‌کند.
           </p>
-          <div class="about-skills">
-            <span class="skill-tag">Flutter</span>
-            <span class="skill-tag">Dart</span>
-            <span class="skill-tag">Riverpod</span>
-            <span class="skill-tag">GetX</span>
-            <span class="skill-tag">Clean Architecture</span>
-            <span class="skill-tag">UI/UX</span>
+
+          <div class="feature-pills">
+            <div class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="kaghaz.pill1">حضور و غیاب هوشمند</span>
+            </div>
+            <div class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="kaghaz.pill2">ثبت و تحلیل نمرات</span>
+            </div>
+            <div class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="kaghaz.pill3">تایمر و قرعه‌کشی کلاسی</span>
+            </div>
+            <div class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="kaghaz.pill4">معماری Riverpod + Clean</span>
+            </div>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="screenshot-item"><img src="assets/kaghaz/1.png" alt="اسکرین‌شات ۱ کاغذ" loading="lazy"></div>
+            <div class="screenshot-item"><img src="assets/kaghaz/2.png" alt="اسکرین‌شات ۲ کاغذ" loading="lazy"></div>
+            <div class="screenshot-item"><img src="assets/kaghaz/3.png" alt="اسکرین‌شات ۳ کاغذ" loading="lazy"></div>
+          </div>
+        </article>
+
+        <!-- Artilo Card -->
+        <article class="app-card-featured">
+          <div class="card-header-row">
+            <div class="app-brand">
+              <img src="assets/artilo-logo.png" alt="آرتیلو" class="app-logo-img">
+              <div class="app-meta">
+                <h3 data-i18n="artilo.title">آرتیلو — دنیای هنر، موسیقی و پادکست</h3>
+                <span class="app-category artilo" data-i18n="artilo.tagline">پلتفرم شنیداری و تصویری محتوای هنری</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="artilo.html" class="btn btn-secondary" data-i18n="app.details">جزئیات کامل</a>
+              <a href="https://myket.ir" target="_blank" rel="noopener" class="btn btn-artilo" data-i18n="app.download">دانلود مستقیم از مایکت</a>
+            </div>
+          </div>
+
+          <p class="app-card-desc" data-i18n="artilo.desc">
+            آرتیلو محیطی لذت‌بخش برای علاقه مندان به هنر، موسیقی و پادکست‌های فارسی است. با پلیر اختصاصی، پخش صوتی باکیفیت، آرشیو برنامه‌ها و طراحی مینیمال و جذاب جهت تجربه کاربری متفاوت.
+          </p>
+
+          <div class="feature-pills">
+            <div class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="artilo.pill1">پلیر صوتی اختصاصی</span>
+            </div>
+            <div class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="artilo.pill2">پادکست‌ها و مصاحبه‌ها</span>
+            </div>
+            <div class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="artilo.pill3">پخش ویدیو و موزیک</span>
+            </div>
+            <div class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="artilo.pill4">طراحی تاریک و مدرن</span>
+            </div>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="screenshot-item"><img src="assets/artilo/1.png" alt="اسکرین‌شات ۱ آرتیلو" loading="lazy"></div>
+            <div class="screenshot-item"><img src="assets/artilo/2.png" alt="اسکرین‌شات ۲ آرتیلو" loading="lazy"></div>
+            <div class="screenshot-item"><img src="assets/artilo/3.png" alt="اسکرین‌شات ۳ آرتیلو" loading="lazy"></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ DEVELOPER BIO ============ -->
+    <section id="about" class="about-section">
+      <div class="wrap">
+        <div class="about-box">
+          <img src="assets/profile.jpg" alt="علی میری" class="profile-avatar" onerror="this.outerHTML='<div class=\'avatar-placeholder\'>AM</div>'">
+          
+          <div>
+            <div class="section-eyebrow" data-i18n="about.eyebrow">درباره من</div>
+            <h2 class="section-title" data-i18n="about.title">علی میری — توسعه‌دهنده اپلیکیشن</h2>
+            <p class="about-bio" data-i18n="about.bio">
+              من علی میری هستم، توسعه‌دهنده نرم‌افزار متمرکز بر اکوسیستم فلاتر و اندروید. با اشتیاق زیاد به ایجاد برنامه‌های کاربردی، بهینه‌سازی عملکرد، و پیاده‌سازی معماری تمیز (Clean Architecture) فعالیت می‌کنم. دو اپلیکیشن منتشر شده من با استقبال خوب کاربران در مارکت مایکت مواجه شده‌اند.
+            </p>
+
+            <div class="tech-tags">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Riverpod</span>
+              <span class="tech-tag">Clean Architecture</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">Android</span>
+              <span class="tech-tag">Git</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ APPS ============ -->
-  <section id="work">
-    <div class="wrap">
-      <div class="eyebrow" data-i18n="work.eyebrow">پروژه‌ها</div>
-      <h2 class="section-title reveal" data-i18n="work.title">اپلیکیشن‌های من</h2>
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact-section">
+      <div class="wrap">
+        <div class="contact-card">
+          <div class="section-eyebrow" style="justify-content: center;" data-i18n="contact.eyebrow">ارتباط با من</div>
+          <h2 class="section-title" data-i18n="contact.title">آغاز یک همکاری یا پروژه جدید</h2>
+          <p class="section-desc" style="margin: 0 auto 32px;" data-i18n="contact.desc">
+            برای پیشنهاد همکاری، مشاوره‌های نرم‌افزار یا صحبت درباره پروژه‌ها می‌توانید از طریق راه‌های زیر با من در ارتباط باشید.
+          </p>
 
-      <!-- Kaghaz App -->
-      <article class="app-card reveal">
-        <div class="app-card-header">
-          <img src="assets/kaghaz-logo.png" alt="Kaghaz" class="app-logo">
-          <div class="app-card-info">
-            <h3>Kaghaz — کاغذ</h3>
-            <span class="app-tagline" data-i18n="work.kaghaz.tag">مدیریت کلاس برای معلم‌ها</span>
-          </div>
-          <div class="app-links">
-            <a href="https://myket.ir/" target="_blank" rel="noopener" class="app-link app-link-store">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                <polyline points="7 10 12 15 17 10"/>
-                <line x1="12" y1="15" x2="12" y2="3"/>
-              </svg>
-              <span data-i18n="app.download">دانلود</span>
+          <div class="contact-buttons">
+            <a href="mailto:contact@alimiri.dev" class="contact-btn-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>contact@alimiri.dev</span>
+            </a>
+            <a href="https://t.me/alimiri_dev" target="_blank" rel="noopener" class="contact-btn-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2l-19 8.5 6 2.5 2.5 7.5 3-4.5 5 3.5z"></path></svg>
+              <span>Telegram</span>
+            </a>
+            <a href="https://github.com/alimiri" target="_blank" rel="noopener" class="contact-btn-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span>GitHub</span>
             </a>
           </div>
         </div>
-        <p class="app-desc" data-i18n="work.kaghaz.desc">
-          ابزاری برای معلم‌ها که حضور و غیاب، نمرات و ابزارهای کلاس (قرعه‌کشی دانش‌آموز، تایمر کلاس، گروه‌بندی) را یک‌جا مدیریت می‌کند. با ریوردپاد و معماری تمیز ساخته شده و روی مایکت منتشر شده.
-        </p>
-        <div class="app-features">
-          <div class="feature">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-              <polyline points="22 4 12 14.01 9 11.01"/>
-            </svg>
-            <span data-i18n="work.kaghaz.feature1">حضور و غیاب</span>
-          </div>
-          <div class="feature">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-              <polyline points="22 4 12 14.01 9 11.01"/>
-            </svg>
-            <span data-i18n="work.kaghaz.feature2">مدیریت نمرات</span>
-          </div>
-          <div class="feature">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-              <polyline points="22 4 12 14.01 9 11.01"/>
-            </svg>
-            <span data-i18n="work.kaghaz.feature3">ابزارهای کلاسی</span>
-          </div>
-        </div>
-        <div class="gallery">
-          <div class="screenshot"><img src="assets/kaghaz/1.png" alt="Kaghaz screenshot 1" loading="lazy" onerror="this.parentElement.style.display='none';"></div>
-          <div class="screenshot"><img src="assets/kaghaz/2.png" alt="Kaghaz screenshot 2" loading="lazy" onerror="this.parentElement.style.display='none';"></div>
-          <div class="screenshot"><img src="assets/kaghaz/3.png" alt="Kaghaz screenshot 3" loading="lazy" onerror="this.parentElement.style.display='none';"></div>
-        </div>
-      </article>
+      </div>
+    </section>
 
-      <!-- Artilo App -->
-      <article class="app-card accent-artilo reveal">
-        <div class="app-card-header">
-          <img src="assets/artilo-logo.png" alt="Artilo" class="app-logo">
-          <div class="app-card-info">
-            <h3>Artilo — آرتیلو</h3>
-            <span class="app-tagline" data-i18n="work.artilo.tag">هنر، موسیقی و پادکست</span>
-          </div>
-          <div class="app-links">
-            <a href="https://myket.ir/" target="_blank" rel="noopener" class="app-link app-link-store">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                <polyline points="7 10 12 15 17 10"/>
-                <line x1="12" y1="15" x2="12" y2="3"/>
-              </svg>
-              <span data-i18n="app.download">دانلود</span>
-            </a>
-          </div>
-        </div>
-        <p class="app-desc" data-i18n="work.artilo.desc">
-          پلتفرمی برای شنیدن موسیقی، پادکست و محتوای ویدیویی فارسی، با پلیر اختصاصی و طراحی سرشار از جزئیات. روی مایکت منتشر شده.
-        </p>
-        <div class="app-features">
-          <div class="feature">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-              <polyline points="22 4 12 14.01 9 11.01"/>
-            </svg>
-            <span data-i18n="work.artilo.feature1">موسیقی و پادکست</span>
-          </div>
-          <div class="feature">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-              <polyline points="22 4 12 14.01 9 11.01"/>
-            </svg>
-            <span data-i18n="work.artilo.feature2">پلیر اختصاصی</span>
-          </div>
-          <div class="feature">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-              <polyline points="22 4 12 14.01 9 11.01"/>
-            </svg>
-            <span data-i18n="work.artilo.feature3">محتوای ویدیویی</span>
-          </div>
-        </div>
-        <div class="gallery">
-          <div class="screenshot"><img src="assets/artilo/1.png" alt="Artilo screenshot 1" loading="lazy" onerror="this.parentElement.style.display='none';"></div>
-          <div class="screenshot"><img src="assets/artilo/2.png" alt="Artilo screenshot 2" loading="lazy" onerror="this.parentElement.style.display='none';"></div>
-          <div class="screenshot"><img src="assets/artilo/3.png" alt="Artilo screenshot 3" loading="lazy" onerror="this.parentElement.style.display='none';"></div>
-        </div>
-      </article>
-    </div>
-  </section>
+  </main>
 
-  <!-- ============ CONTACT ============ -->
-  <section id="contact">
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
     <div class="wrap">
-      <div class="contact-wrapper reveal">
-        <div class="eyebrow" data-i18n="contact.eyebrow">ارتباط</div>
-        <h2 class="section-title" data-i18n="contact.title">بیا گپ بزنیم</h2>
-        <p class="contact-desc" data-i18n="contact.lede">
-          برای همکاری، پیشنهاد یا فقط یه سلام، از این‌جا در دسترسم.
-        </p>
-        <div class="contact-links">
-          <a href="https://instagram.com/4itsam" target="_blank" rel="noopener" class="contact-link">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-            </svg>
-            <span>Instagram</span>
-          </a>
-          <a href="https://github.com/4itsam" target="_blank" rel="noopener" class="contact-link">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-            </svg>
-            <span>GitHub</span>
-          </a>
-          <a href="https://www.linkedin.com/in/4newt/" target="_blank" rel="noopener" class="contact-link">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-              <rect x="2" y="9" width="4" height="12"/>
-              <circle cx="4" cy="4" r="2"/>
-            </svg>
-            <span>LinkedIn</span>
-          </a>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="logo-icon">AM</span>
+            <span class="nav-name">Ali Miri</span>
+          </div>
+          <p data-i18n="footer.desc">توسعه‌دهنده اپلیکیشن‌های موبایل با فلاتر و اندروید.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer.col1">ناوبری</h5>
+          <a href="index.html" data-i18n="nav.home">خانه</a>
+          <a href="#about" data-i18n="nav.about">توسعه‌دهنده</a>
+          <a href="#contact" data-i18n="nav.contact">تماس</a>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer.col2">اپلیکیشن‌ها</h5>
+          <a href="kaghaz.html" data-i18n="nav.kaghaz">کاغذ</a>
+          <a href="artilo.html" data-i18n="nav.artilo">آرتیلو</a>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer.col3">شبکه‌ها</h5>
+          <a href="https://github.com/alimiri" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://t.me/alimiri_dev" target="_blank" rel="noopener">Telegram</a>
+          <a href="mailto:contact@alimiri.dev">Email</a>
         </div>
       </div>
-    </div>
-  </section>
 
-</main>
-
-<!-- ============ FOOTER ============ -->
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="footer-logo">
-          <span class="logo-mark">A</span>
-          <span class="footer-name">Ali Miri</span>
-        </div>
-        <p class="footer-desc" data-i18n="footer.desc">توسعه‌دهنده اپلیکیشن‌های اندرویدی با فلاتر.</p>
-      </div>
-      <div class="footer-links-group">
-        <h4 data-i18n="footer.links">لینک‌ها</h4>
-        <a href="#about" data-i18n="nav.about">درباره</a>
-        <a href="#work" data-i18n="nav.work">کارها</a>
-        <a href="#contact" data-i18n="nav.contact">تماس</a>
-      </div>
-      <div class="footer-links-group">
-        <h4 data-i18n="footer.apps">اپلیکیشن‌ها</h4>
-        <a href="https://myket.ir/" target="_blank" rel="noopener">Kaghaz — کاغذ</a>
-        <a href="https://myket.ir/" target="_blank" rel="noopener">Artilo — آرتیلو</a>
-      </div>
-      <div class="footer-links-group">
-        <h4 data-i18n="footer.social">شبکه‌ها</h4>
-        <a href="https://instagram.com/4itsam" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://github.com/4itsam" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/4newt/" target="_blank" rel="noopener">LinkedIn</a>
+      <div class="footer-bottom">
+        <span data-i18n="footer.copy">© ۲۰۲۴ علی میری. تمامی حقوق محفوظ است.</span>
+        <span data-i18n="footer.note">طراحی‌شده با فلاتر و استانداردهای وب مدرن.</span>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span data-i18n="footer.copy">© ۲۰۲۴ علی میری. تمامی حقوق محفوظ است.</span>
-      <span data-i18n="footer.note">ساخته‌شده با فلاتر و خطِ قرمز.</span>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
