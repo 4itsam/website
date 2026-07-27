@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://dakto.ir/</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://dakto.ir/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dakto.ir/?lang=en" />
+  </url>
+
+  <!-- Kaghaz (کاغذ — مدیریت کلاس و معلم‌یار) -->
+  <url>
+    <loc>https://dakto.ir/kaghaz.html</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://dakto.ir/kaghaz.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dakto.ir/kaghaz.html?lang=en" />
+  </url>
+
+  <!-- Artilo (آرتیلو — هنر، موسیقی و پادکست) -->
+  <url>
+    <loc>https://dakto.ir/artilo.html</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://dakto.ir/artilo.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dakto.ir/artilo.html?lang=en" />
+  </url>
+
+  <!-- Danak (دانک — یادگیری مدیریت) -->
+  <url>
+    <loc>https://dakto.ir/danak.html</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://dakto.ir/danak.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dakto.ir/danak.html?lang=en" />
+  </url>
+
+  <!-- Shakhes (شاخص — بازی کوییز) -->
+  <url>
+    <loc>https://dakto.ir/shakhes.html</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://dakto.ir/shakhes.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dakto.ir/shakhes.html?lang=en" />
+  </url>
+
+</urlset>

@@ -1,0 +1,15 @@
+# Robots.txt for Dakto (داکتو) — https://dakto.ir
+# Developed by Ali Miri (علی میری)
+
+User-agent: *
+Allow: /
+
+# Disallow temporary/utility paths
+Disallow: /.git/
+Disallow: /.mimocode/
+
+# Sitemap location
+Sitemap: https://dakto.ir/sitemap.xml
+
+# Crawl-delay (optional, for polite bots)
+Crawl-delay: 1

@@ -1,4 +1,4 @@
-// Ali Miri Portfolio & App Showcase Engine
+// Dakto (داکتو) Portfolio & App Showcase Engine
 // Client-side i18n, mobile drawer, lightbox, scroll animations.
 
 const i18n = {
@@ -11,7 +11,7 @@ const i18n = {
     "nav.about": "توسعه‌دهنده",
     "nav.contact": "تماس",
 
-    "hero.badge": "توسعه‌دهنده فلاتر و اندروید",
+    "hero.badge": "استودیو داکتو — توسعه‌دهنده فلاتر و اندروید",
     "hero.title1": "خلق اپلیکیشن‌های",
     "hero.titleMark": "کاربردی و مدرن",
     "hero.subtitle": "طراحی، کدنویسی و انتشار اپلیکیشن‌های اندرویدی با معماری تمیز و فلاتر. تمرکز روی تجربه کاربری بی‌نقص و عملکرد فوق‌العاده.",
@@ -77,7 +77,7 @@ const i18n = {
     "app.download": "دانلود مستقیم از مایکت",
 
     "about.eyebrow": "درباره من",
-    "about.title": "علی میری — توسعه‌دهنده اپلیکیشن",
+    "about.title": "علی میری — توسعه‌دهنده اپلیکیشن (استودیو داکتو)",
     "about.bio": "من علی میری هستم، توسعه‌دهنده نرم‌افزار متمرکز بر اکوسیستم فلاتر و اندروید. با اشتیاق زیاد به ایجاد برنامه‌های کاربردی، بهینه‌سازی عملکرد، و پیاده‌سازی معماری تمیز (Clean Architecture) فعالیت می‌کنم. چهار اپلیکیشن منتشر شده من (کاغذ، آرتیلو، دانک و شاخص) با استقبال خوب کاربران در مارکت مایکت مواجه شده‌اند.",
 
     "kaghazPage.heroBadge": "اپلیکیشن آموزشی معلمان",
@@ -136,7 +136,7 @@ const i18n = {
     "footer.col1": "ناوبری",
     "footer.col2": "اپلیکیشن‌ها",
     "footer.col3": "شبکه‌ها",
-    "footer.copy": "© ۲۰۲۴ علی میری. تمامی حقوق محفوظ است.",
+    "footer.copy": "© ۲۰۲۵ داکتو (Dakto). تمامی حقوق محفوظ است.",
     "footer.note": "طراحی‌شده با فلاتر و استانداردهای وب مدرن."
   },
   en: {
@@ -148,7 +148,7 @@ const i18n = {
     "nav.about": "Developer",
     "nav.contact": "Contact",
 
-    "hero.badge": "Flutter & Android Developer",
+    "hero.badge": "Dakto Studio — Flutter & Android Developer",
     "hero.title1": "Crafting High Quality",
     "hero.titleMark": "Mobile Apps",
     "hero.subtitle": "Designing, building, and shipping production-ready Android apps with Clean Architecture & Flutter. Focused on sleek UX and performance.",
@@ -214,7 +214,7 @@ const i18n = {
     "app.download": "Download on Myket",
 
     "about.eyebrow": "About Developer",
-    "about.title": "Ali Miri — Mobile App Engineer",
+    "about.title": "Ali Miri — Mobile App Engineer (Dakto Studio)",
     "about.bio": "I am Ali Miri, a software developer specialized in the Flutter & Android ecosystem. Passionate about building intuitive mobile apps, optimizing UI performance, and implementing Clean Architecture. My four published apps (Kaghaz, Artilo, Danak, and Shakhes) have earned great user feedback on the Myket store.",
 
     "kaghazPage.heroBadge": "Educational App for Teachers",
@@ -273,7 +273,7 @@ const i18n = {
     "footer.col1": "Navigation",
     "footer.col2": "Apps",
     "footer.col3": "Social",
-    "footer.copy": "© 2024 Ali Miri. All rights reserved.",
+    "footer.copy": "© 2025 Dakto (داکتو). All rights reserved.",
     "footer.note": "Built with Flutter and modern web standards."
   }
 };
