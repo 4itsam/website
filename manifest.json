@@ -1,0 +1,21 @@
+{
+  "name": "داکتو — استودیو توسعه اپلیکیشن",
+  "short_name": "Dakto",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0c14",
+  "theme_color": "#0a0c14",
+  "description": "استودیو توسعه اپلیکیشن‌های اندرویدی با فلاتر. سازنده کاغذ، آرتیلو، دانک و شاخص.",
+  "icons": [
+    {
+      "src": "/assets/kaghaz-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/kaghaz-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

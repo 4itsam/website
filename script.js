@@ -4,10 +4,7 @@
 const i18n = {
   fa: {
     "nav.home": "خانه",
-    "nav.kaghaz": "کاغذ",
-    "nav.artilo": "آرتیلو",
-    "nav.danak": "دانک",
-    "nav.shakhes": "شاخص",
+    "nav.apps": "محصولات",
     "nav.about": "توسعه‌دهنده",
     "nav.contact": "تماس",
 
@@ -141,10 +138,7 @@ const i18n = {
   },
   en: {
     "nav.home": "Home",
-    "nav.kaghaz": "Kaghaz",
-    "nav.artilo": "Artilo",
-    "nav.danak": "Danak",
-    "nav.shakhes": "Shakhes",
+    "nav.apps": "Apps",
     "nav.about": "Developer",
     "nav.contact": "Contact",
 

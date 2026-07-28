@@ -85,12 +85,45 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "اپلیکیشن کاغذ چیست و چه کاربردی برای معلمان دارد؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "کاغذ یک نرم‌افزار معلم‌یار و سامانه هوشمند مدیریت کلاس است که به معلمان اجازه می‌دهد حضور و غیاب دانش‌آموزان را به سرعت ثبت کنند، نمرات مستمر و پایانی را مدیریت کنند و از ابزارهایی مثل تایمر و قرعه‌کشی کلاسی بهره ببرند."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "چگونه می‌توانم اپلیکیشن کاغذ را دانلود کنم؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "شما می‌توانید اپلیکیشن کاغذ را به صورت مستقیم از مارکت مایکت دانلود و روی گوشی اندروید خود نصب کنید."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "آیا حضور و غیاب در نرم‌افزار کاغذ به صورت آفلاین کار می‌کند؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "بله، تمام اطلاعات کلاس، حضور و غیاب و نمرات به صورت لوکال روی دستگاه ذخیره می‌شود و بدون نیاز به اینترنت قابل استفاده است."
+        }
+      }
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
 
@@ -104,10 +137,7 @@
 
       <nav class="nav-menu">
         <a href="index.html" class="nav-link" data-i18n="nav.home">خانه</a>
-        <a href="kaghaz.html" class="nav-link active" data-i18n="nav.kaghaz">کاغذ</a>
-        <a href="artilo.html" class="nav-link" data-i18n="nav.artilo">آرتیلو</a>
-        <a href="danak.html" class="nav-link" data-i18n="nav.danak">دانک</a>
-        <a href="shakhes.html" class="nav-link" data-i18n="nav.shakhes">شاخص</a>
+        <a href="index.html#apps" class="nav-link" data-i18n="nav.apps">محصولات</a>
         <a href="index.html#about" class="nav-link" data-i18n="nav.about">توسعه‌دهنده</a>
         <a href="index.html#contact" class="nav-link" data-i18n="nav.contact">تماس</a>
       </nav>
@@ -184,9 +214,39 @@
             <div class="screenshot-item"><img src="assets/kaghaz/1.png" alt="اسکرین شات ۱ کاغذ"></div>
             <div class="screenshot-item"><img src="assets/kaghaz/2.png" alt="اسکرین شات ۲ کاغذ"></div>
             <div class="screenshot-item"><img src="assets/kaghaz/3.png" alt="اسکرین شات ۳ کاغذ"></div>
-          </div>
         </div>
 
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" style="padding-bottom: 100px;">
+      <div class="wrap" style="max-width: 900px;">
+        <div class="section-eyebrow">سوالات متداول</div>
+        <h2 class="section-title">پاسخ به سوالات رایج معلمان</h2>
+
+        <div class="faq-accordion">
+          <details class="faq-item" open>
+            <summary class="faq-question">اپلیکیشن کاغذ چیست و چه کاربردی برای معلمان دارد؟</summary>
+            <div class="faq-answer">
+              کاغذ یک نرم‌افزار معلم‌یار و سامانه هوشمند مدیریت کلاس است که به معلمان اجازه می‌دهد حضور و غیاب دانش‌آموزان را به سرعت ثبت کنند، نمرات مستمر و پایانی را مدیریت کنند و از ابزارهایی مثل تایمر و قرعه‌کشی کلاسی بهره ببرند.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">چگونه می‌توانم اپلیکیشن کاغذ را دانلود کنم؟</summary>
+            <div class="faq-answer">
+              شما می‌توانید اپلیکیشن کاغذ را به صورت مستقیم از مارکت مایکت دانلود و روی گوشی اندروید خود نصب کنید.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">آیا حضور و غیاب در نرم‌افزار کاغذ به صورت آفلاین کار می‌کند؟</summary>
+            <div class="faq-answer">
+              بله، تمام اطلاعات کلاس، حضور و غیاب و نمرات به صورت لوکال روی دستگاه ذخیره می‌شود و بدون نیاز به اینترنت قابل استفاده است.
+            </div>
+          </details>
+        </div>
       </div>
     </section>
 

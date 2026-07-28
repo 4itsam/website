@@ -2,23 +2,21 @@
 
 ## Project Overview
 - Static portfolio website for Ali Miri (indie Flutter developer).
-- Showcases two Android apps: **Kaghaz** (classroom management) and **Artilo** (art, music, podcasts).
+- Showcases Android apps (e.g., Kaghaz, Artilo, Danak, Shakhes).
 - Bilingual: Farsi (default, RTL) and English (LTR).
-- Pure static setup: no build tools, no package manager dependencies, no test runner.
+- Architecture: Pure static HTML/CSS/JS. No build tools, package managers, or frameworks.
 
-## Core Architecture & Files
-- `index.html`: Main HTML structure with `data-i18n` localization attributes.
-- `style.css`: Styling using CSS logical properties (`margin-inline`, `padding-block`) for seamless RTL/LTR support.
-- `script.js`: Client-side i18n dictionaries (`i18n.fa`, `i18n.en`), language toggle with `localStorage`, and `IntersectionObserver` scroll animations.
-- `assets/`:
-  - `profile.jpg`: Developer profile photo.
-  - `kaghaz-logo.png`, `artilo-logo.png`: App logos.
-  - `kaghaz/` & `artilo/`: App screenshots (`1.png`, `2.png`, `3.png`).
+## Core Architecture
+- `index.html`: Main structure with `data-i18n` localization.
+- `style.css`: RTL/LTR support using CSS logical properties (`margin-inline`, `padding-block`).
+- `script.js`: i18n logic (`i18n.fa`, `i18n.en`), `localStorage` language persistence, and `IntersectionObserver` for animations.
+- `assets/`: Contains app logos and subdirectories with screenshots (`1.png`, `2.png`, `3.png`).
 
-## Development & Testing Workflow
-- **Run/Test**: Open `index.html` directly in any web browser. No local dev server or build step required.
+## Development & Workflow
+- **Run/Test**: Open `index.html` directly in a browser. No server required.
 - **Verification Checklist**:
-  - Test both Farsi (RTL) and English (LTR) toggles.
-  - Verify all asset paths in `assets/` (ensure exact filename matching, e.g., `.png`).
-  - Check responsive layout on mobile viewports.
-  - Respect `prefers-reduced-motion` for accessibility (animations disabled).
+  - Toggle Farsi/English: Validate RTL/LTR layout transitions.
+  - Assets: Ensure new screenshot/logo paths match existing naming conventions (e.g., `.png`).
+  - Responsiveness: Check mobile viewports.
+  - Accessibility: `prefers-reduced-motion` must disable animations.
+
