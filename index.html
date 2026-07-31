@@ -81,7 +81,7 @@
         <span class="nav-name">Dakto</span>
       </a>
 
-      <nav class="nav-menu">
+      <nav class="nav-menu" id="nav-menu">
         <a href="index.html" class="nav-link active" data-i18n="nav.home">خانه</a>
         <a href="#apps" class="nav-link" data-i18n="nav.apps">محصولات</a>
         <a href="#about" class="nav-link" data-i18n="nav.about">توسعه‌دهنده</a>
@@ -93,7 +93,7 @@
           <button type="button" class="lang-btn" data-lang="fa" aria-pressed="true">فا</button>
           <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
         </div>
-        <button class="mobile-toggle" aria-label="Toggle Navigation">
+        <button class="mobile-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle Navigation">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </button>
       </div>
@@ -129,7 +129,7 @@
 
             <div class="hero-stats">
               <div class="stat-item">
-                <span class="stat-val" data-i18n="hero.stat1Val">۲+</span>
+                <span class="stat-val" data-i18n="hero.stat1Val">۴+</span>
                 <span class="stat-lbl" data-i18n="hero.stat1Lbl">اپلیکیشن منتشرشده</span>
               </div>
               <div class="stat-item">
@@ -196,7 +196,7 @@
         </p>
 
         <!-- Kaghaz Card -->
-        <article class="app-card-featured">
+        <article class="app-card-featured card-kaghaz">
           <div class="card-header-row">
             <div class="app-brand">
               <img src="assets/kaghaz-logo.png" alt="کاغذ" class="app-logo-img">
@@ -205,7 +205,7 @@
                 <span class="app-category kaghaz" data-i18n="kaghaz.tagline">مدیریت کلاس، حضور و غیاب و ثبت نمرات</span>
               </div>
             </div>
-            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <div class="card-actions">
               <a href="kaghaz.html" class="btn btn-secondary" data-i18n="app.details">جزئیات کامل</a>
               <a href="https://myket.ir/app/com.alimiri.kaghaz" target="_blank" rel="noopener" class="btn btn-kaghaz" data-i18n="app.download">دانلود مستقیم از مایکت</a>
             </div>
@@ -242,7 +242,7 @@
         </article>
 
         <!-- Artilo Card -->
-        <article class="app-card-featured">
+        <article class="app-card-featured card-artilo">
           <div class="card-header-row">
             <div class="app-brand">
               <img src="assets/artilo-logo.png" alt="آرتیلو" class="app-logo-img">
@@ -251,7 +251,7 @@
                 <span class="app-category artilo" data-i18n="artilo.tagline">پلتفرم شنیداری و تصویری محتوای هنری</span>
               </div>
             </div>
-            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <div class="card-actions">
               <a href="artilo.html" class="btn btn-secondary" data-i18n="app.details">جزئیات کامل</a>
               <a href="https://myket.ir/app/com.alimiri.atl" target="_blank" rel="noopener" class="btn btn-artilo" data-i18n="app.download">دانلود مستقیم از مایکت</a>
             </div>
@@ -288,7 +288,7 @@
         </article>
 
         <!-- Danak Card -->
-        <article class="app-card-featured">
+        <article class="app-card-featured card-kaghaz">
           <div class="card-header-row">
             <div class="app-brand">
               <img src="assets/danak-logo.png" alt="دانک" class="app-logo-img">
@@ -297,7 +297,7 @@
                 <span class="app-category kaghaz" data-i18n="danak.tagline">تئوری‌ها، تاریخ و بزرگان مدیریت</span>
               </div>
             </div>
-            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <div class="card-actions">
               <a href="danak.html" class="btn btn-secondary" data-i18n="app.details">جزئیات کامل</a>
             </div>
           </div>
@@ -333,7 +333,7 @@
         </article>
 
         <!-- Shakhes Card -->
-        <article class="app-card-featured">
+        <article class="app-card-featured card-artilo">
           <div class="card-header-row">
             <div class="app-brand">
               <img src="assets/shakhes-logo.png" alt="شاخص" class="app-logo-img">
@@ -342,7 +342,7 @@
                 <span class="app-category artilo" data-i18n="shakhes.tagline">بیش از ۱۸ کتگوری مختلف با گیم‌مودهای جذاب</span>
               </div>
             </div>
-            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <div class="card-actions">
               <a href="shakhes.html" class="btn btn-secondary" data-i18n="app.details">جزئیات کامل</a>
             </div>
           </div>

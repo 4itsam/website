@@ -7,6 +7,10 @@ const i18n = {
     "nav.apps": "محصولات",
     "nav.about": "توسعه‌دهنده",
     "nav.contact": "تماس",
+    "nav.kaghaz": "کاغذ",
+    "nav.artilo": "آرتیلو",
+    "nav.danak": "دانک",
+    "nav.shakhes": "شاخص",
 
     "hero.badge": "استودیو داکتو — توسعه‌دهنده فلاتر و اندروید",
     "hero.title1": "خلق اپلیکیشن‌های",
@@ -141,6 +145,10 @@ const i18n = {
     "nav.apps": "Apps",
     "nav.about": "Developer",
     "nav.contact": "Contact",
+    "nav.kaghaz": "Kaghaz",
+    "nav.artilo": "Artilo",
+    "nav.danak": "Danak",
+    "nav.shakhes": "Shakhes",
 
     "hero.badge": "Dakto Studio — Flutter & Android Developer",
     "hero.title1": "Crafting High Quality",
@@ -310,25 +318,63 @@ langBtns.forEach((btn) => {
 // Initial Language Preference Check
 let initialLang = "fa";
 try {
-  const saved = localStorage.getItem("app_lang");
-  if (saved === "fa" || saved === "en") initialLang = saved;
+  const urlLang = new URLSearchParams(window.location.search).get("lang");
+  if (urlLang === "fa" || urlLang === "en") {
+    initialLang = urlLang;
+  } else {
+    const saved = localStorage.getItem("app_lang");
+    if (saved === "fa" || saved === "en") initialLang = saved;
+  }
 } catch (e) {
   /* ignore */
 }
 setLanguage(initialLang);
 
 // Mobile Nav Toggle
+const closeNavMenu = () => {
+  navMenu.classList.remove("open");
+  mobileToggle.setAttribute("aria-expanded", "false");
+  document.body.classList.remove("nav-locked");
+};
+
 if (mobileToggle && navMenu) {
   mobileToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("open");
+    const isOpen = navMenu.classList.toggle("open");
+    mobileToggle.setAttribute("aria-expanded", String(isOpen));
+    document.body.classList.toggle("nav-locked", isOpen);
   });
 
   // Close menu on link click
   navMenu.querySelectorAll(".nav-link").forEach((link) => {
-    link.addEventListener("click", () => {
-      navMenu.classList.remove("open");
-    });
+    link.addEventListener("click", closeNavMenu);
   });
+
+  // Close on outside click, Esc, and when resizing back to desktop
+  document.addEventListener("click", (e) => {
+    if (
+      navMenu.classList.contains("open") &&
+      !navMenu.contains(e.target) &&
+      !mobileToggle.contains(e.target)
+    ) {
+      closeNavMenu();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeNavMenu();
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 820) closeNavMenu();
+  });
+}
+
+// Topbar shadow on scroll
+const topbar = document.querySelector(".topbar");
+if (topbar) {
+  const onScroll = () => topbar.classList.toggle("scrolled", window.scrollY > 10);
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
 }
 
 // Intersection Observer for Smooth Scroll Reveal
@@ -345,12 +391,12 @@ if ("IntersectionObserver" in window) {
     { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
   );
 
-  document.querySelectorAll(".reveal-on-scroll, .preview-card, .app-card-featured, .spec-card, .timeline-card-item, .skill-category-card").forEach((el) => {
+  document.querySelectorAll(".reveal-on-scroll, .preview-card, .app-card-featured, .spec-card, .timeline-card-item, .skill-category-card, .screenshot-item").forEach((el) => {
     el.classList.add("reveal-on-scroll");
     observer.observe(el);
   });
 } else {
-  document.querySelectorAll(".reveal-on-scroll, .preview-card, .app-card-featured, .spec-card, .timeline-card-item, .skill-category-card").forEach((el) => {
+  document.querySelectorAll(".reveal-on-scroll, .preview-card, .app-card-featured, .spec-card, .timeline-card-item, .skill-category-card, .screenshot-item").forEach((el) => {
     el.classList.add("visible");
   });
 }
