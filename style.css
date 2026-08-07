@@ -313,28 +313,6 @@ body.nav-locked {
   box-shadow: 0 8px 30px rgba(99, 102, 241, 0.45);
 }
 
-.btn-kaghaz {
-  background: linear-gradient(135deg, var(--accent-kaghaz), #0284c7);
-  color: #ffffff;
-  box-shadow: 0 4px 20px var(--accent-kaghaz-glow);
-}
-
-.btn-kaghaz:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(14, 165, 233, 0.45);
-}
-
-.btn-artilo {
-  background: linear-gradient(135deg, var(--accent-artilo), #e11d48);
-  color: #ffffff;
-  box-shadow: 0 4px 20px var(--accent-artilo-glow);
-}
-
-.btn-artilo:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(244, 63, 94, 0.45);
-}
-
 .btn-secondary {
   background: rgba(255, 255, 255, 0.05);
   border-color: var(--border);
@@ -345,6 +323,37 @@ body.nav-locked {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
+}
+
+/* ---------- STORE BADGES (Myket / Cafe Bazaar) ---------- */
+
+.store-badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.store-badge:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.store-badge img {
+  height: 30px;
+  width: auto;
+  display: block;
 }
 
 /* ---------- BADGES & HEADINGS ---------- */
@@ -1340,6 +1349,8 @@ body.nav-locked {
   .lang-btn { padding: 5px 10px; }
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; }
+  .hero-actions .store-badges { flex-direction: column; width: 100%; }
+  .hero-actions .store-badge { width: 100%; }
   .hero-stats { gap: 8px; }
   .stat-lbl { font-size: 0.78rem; }
   .card-header-row { gap: 16px; }
@@ -1428,6 +1439,10 @@ body.nav-locked {
 
 .btn {
   transition: transform 0.35s var(--ease-smooth), box-shadow 0.35s var(--ease-smooth), background 0.3s ease, border-color 0.3s ease;
+}
+
+.store-badge {
+  transition: transform 0.35s var(--ease-smooth), background 0.3s ease, border-color 0.3s ease;
 }
 
 .preview-card {

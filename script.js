@@ -39,7 +39,7 @@ const i18n = {
     "preview.shakhesTag": "بازی",
 
     "apps.eyebrow": "محصولات منتشرشده",
-    "apps.title": "اپلیکیشن‌های من در مایکت",
+    "apps.title": "اپلیکیشن‌های من",
     "apps.desc": "چهار اپلیکیشن مستقل با معماری تمیز و فلاتر که در مارکت مایکت منتشر شده‌اند.",
 
     "kaghaz.title": "کاغذ — دستیار هوشمند معلمان",
@@ -75,7 +75,6 @@ const i18n = {
     "shakhes.pill4": "رتبه‌بندی و چالش",
 
     "app.details": "جزئیات کامل",
-    "app.download": "دانلود مستقیم از مایکت",
 
     "about.eyebrow": "درباره من",
     "about.title": "علی میری — توسعه‌دهنده اپلیکیشن (استودیو داکتو)",
@@ -177,7 +176,7 @@ const i18n = {
     "preview.shakhesTag": "Game",
 
     "apps.eyebrow": "Shipped Products",
-    "apps.title": "My Apps on Myket Store",
+    "apps.title": "My Apps",
     "apps.desc": "Four standalone apps built with Clean Architecture & Flutter, published on Myket.",
 
     "kaghaz.title": "Kaghaz — Smart Assistant for Teachers",
@@ -213,7 +212,6 @@ const i18n = {
     "shakhes.pill4": "Ranking & Challenges",
 
     "app.details": "Full Details",
-    "app.download": "Download on Myket",
 
     "about.eyebrow": "About Developer",
     "about.title": "Ali Miri — Mobile App Engineer (Dakto Studio)",
