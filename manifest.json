@@ -3,8 +3,8 @@
   "short_name": "Dakto",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0c14",
-  "theme_color": "#0a0c14",
+  "background_color": "#0d0d0a",
+  "theme_color": "#0d0d0a",
   "description": "استودیو توسعه اپلیکیشن‌های اندرویدی با فلاتر. سازنده کاغذ، آرتیلو، دانک و شاخص.",
   "icons": [
     {

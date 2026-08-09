@@ -279,6 +279,34 @@ const i18n = {
 };
 
 const html = document.documentElement;
+
+// Theme Toggle (Vintage CRT dark / Beige light)
+const themeToggle = document.querySelector(".theme-toggle");
+
+function setTheme(theme) {
+  html.setAttribute("data-theme", theme);
+  try {
+    localStorage.setItem("app_theme", theme);
+  } catch (e) { /* ignore storage errors */ }
+}
+
+let initialTheme = "dark";
+try {
+  const savedTheme = localStorage.getItem("app_theme");
+  if (savedTheme === "dark" || savedTheme === "light") {
+    initialTheme = savedTheme;
+  } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) {
+    initialTheme = "light";
+  }
+} catch (e) { /* ignore */ }
+setTheme(initialTheme);
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    setTheme(html.getAttribute("data-theme") === "dark" ? "light" : "dark");
+  });
+}
+
 const langBtns = document.querySelectorAll(".lang-btn");
 const mobileToggle = document.querySelector(".mobile-toggle");
 const navMenu = document.querySelector(".nav-menu");
@@ -335,11 +363,18 @@ const closeNavMenu = () => {
   document.body.classList.remove("nav-locked");
 };
 
+// Close button inside the full-screen mobile menu
+const navMenuClose = document.querySelector(".nav-menu-close");
+if (navMenuClose) {
+  navMenuClose.addEventListener("click", closeNavMenu);
+}
+
 if (mobileToggle && navMenu) {
   mobileToggle.addEventListener("click", () => {
     const isOpen = navMenu.classList.toggle("open");
     mobileToggle.setAttribute("aria-expanded", String(isOpen));
     document.body.classList.toggle("nav-locked", isOpen);
+    if (isOpen && navMenuClose) navMenuClose.focus();
   });
 
   // Close menu on link click
@@ -347,7 +382,9 @@ if (mobileToggle && navMenu) {
     link.addEventListener("click", closeNavMenu);
   });
 
-  // Close on outside click, Esc, and when resizing back to desktop
+  // Close on outside click (kept as a safety net; the full-screen overlay
+  // covers the viewport while open, so the real close paths are the
+  // close button, link taps, and Esc), and when resizing back to desktop
   document.addEventListener("click", (e) => {
     if (
       navMenu.classList.contains("open") &&

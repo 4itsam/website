@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>try{var t=localStorage.getItem("app_theme");if(t!=="dark"&&t!=="light"){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";}document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","dark");}</script>
   <title>داکتو (Dakto) — توسعه‌دهنده اپلیکیشن‌های اندرویدی با فلاتر | علی میری</title>
   <meta name="description" content="داکتو، استودیو توسعه اپلیکیشن‌های اندرویدی با فلاتر. سازنده کاغذ (مدیریت کلاس و معلم‌یار)، آرتیلو (هنر و پادکست)، دانک (آموزش مدیریت) و شاخص (بازی کوییز).">
   <meta name="keywords" content="داکتو, Dakto, علی میری, توسعه‌دهنده اندروید, فلاتر, اپلیکیشن موبایل, کاغذ, معلم یار, مدیریت کلاس, آرتیلو, دانک, شاخص">
   <meta name="author" content="Ali Miri">
-  <meta name="theme-color" content="#0a0c14">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e9e0cb">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0d0d0a">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://dakto.ir/">
 
@@ -66,7 +68,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&family=VT323&family=Lalezar&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
@@ -81,14 +83,13 @@
         <span class="nav-name">Dakto</span>
       </a>
 
-      <nav class="nav-menu" id="nav-menu">
-        <a href="index.html" class="nav-link active" data-i18n="nav.home">خانه</a>
-        <a href="#apps" class="nav-link" data-i18n="nav.apps">محصولات</a>
-        <a href="#about" class="nav-link" data-i18n="nav.about">توسعه‌دهنده</a>
-        <a href="#contact" class="nav-link" data-i18n="nav.contact">تماس</a>
-      </nav>
+      
 
       <div class="nav-actions">
+        <button type="button" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
         <div class="lang-toggle" role="group" aria-label="Language Toggle">
           <button type="button" class="lang-btn" data-lang="fa" aria-pressed="true">فا</button>
           <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
@@ -99,6 +100,26 @@
       </div>
     </div>
   </header>
+
+  <nav class="nav-menu" id="nav-menu" aria-label="Menu">
+    <div class="nav-menu-head">
+      <span class="nav-menu-title">DAKTO<span class="nav-menu-cursor">▊</span></span>
+      <button type="button" class="nav-menu-close" aria-label="Close menu" aria-controls="nav-menu">&times;</button>
+    </div>
+    <div class="nav-menu-body">
+          <a href="index.html" class="nav-link active" data-i18n="nav.home">خانه</a>
+          <a href="#apps" class="nav-link" data-i18n="nav.apps">محصولات</a>
+          <a href="#about" class="nav-link" data-i18n="nav.about">توسعه‌دهنده</a>
+          <a href="#contact" class="nav-link" data-i18n="nav.contact">تماس</a>
+    </div>
+    <div class="nav-menu-foot">
+      <div class="lang-toggle" role="group" aria-label="Language Toggle">
+        <button type="button" class="lang-btn" data-lang="fa" aria-pressed="true">فا</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </nav>
+
 
   <main>
 
