@@ -11,6 +11,7 @@ const i18n = {
     "nav.artilo": "آرتیلو",
     "nav.danak": "دانک",
     "nav.shakhes": "شاخص",
+    "nav.modam": "مدام",
 
     "hero.badge": "استودیو داکتو — توسعه‌دهنده فلاتر و اندروید",
     "hero.title1": "خلق اپلیکیشن‌های",
@@ -18,7 +19,7 @@ const i18n = {
     "hero.subtitle": "طراحی، کدنویسی و انتشار اپلیکیشن‌های اندرویدی با معماری تمیز و فلاتر. تمرکز روی تجربه کاربری بی‌نقص و عملکرد فوق‌العاده.",
     "hero.ctaPrimary": "مشاهده اپلیکیشن‌ها",
     "hero.ctaSecondary": "ارتباط با من",
-    "hero.stat1Val": "۴+",
+    "hero.stat1Val": "۵+",
     "hero.stat1Lbl": "اپلیکیشن منتشرشده",
     "hero.stat2Val": "۱۰۰٪",
     "hero.stat2Lbl": "رضایت و کیفیت",
@@ -37,10 +38,13 @@ const i18n = {
     "preview.shakhesTitle": "شاخص (Shakhes)",
     "preview.shakhesDesc": "بازی کوییز آفلاین با ۱۸+ کتگوری و گیم‌مودهای جذاب",
     "preview.shakhesTag": "بازی",
+    "preview.modamTitle": "مدام (Modam)",
+    "preview.modamDesc": "مطالعه و برنامه‌ریزی درسی با زنجیره‌ی پیشرفت",
+    "preview.modamTag": "آموزشی",
 
     "apps.eyebrow": "محصولات منتشرشده",
     "apps.title": "اپلیکیشن‌های من",
-    "apps.desc": "چهار اپلیکیشن مستقل با معماری تمیز و فلاتر که در مارکت مایکت منتشر شده‌اند.",
+    "apps.desc": "پنج اپلیکیشن مستقل با معماری تمیز و فلاتر که در مارکت مایکت منتشر شده‌اند.",
 
     "kaghaz.title": "کاغذ — دستیار هوشمند معلمان",
     "kaghaz.tagline": "مدیریت کلاس، حضور و غیاب و ثبت نمرات",
@@ -74,11 +78,19 @@ const i18n = {
     "shakhes.pill3": "بازی کاملاً آفلاین",
     "shakhes.pill4": "رتبه‌بندی و چالش",
 
+    "modam.title": "مدام — مطالعه و برنامه‌ریزی درسی",
+    "modam.tagline": "روتین مطالعه را به عادت پایدار تبدیل کن",
+    "modam.desc": "مدام روتین مطالعه را از یک تصمیم زودگذر به یک عادت پایدار تبدیل می‌کند؛ با ثبت ساده‌ی روزانه، زنجیره‌ی پیشرفت (استریک) و نشان‌هایی که خواستنِ ادامه دادن را در تو بیدار می‌کنند.",
+    "modam.pill1": "استریک و زنجیره‌ی روزانه",
+    "modam.pill2": "تایمر مطالعه با حلقه‌ی پیشرفت",
+    "modam.pill3": "۱۵ نشان دستاورد + امتیاز XP",
+    "modam.pill4": "برنامه‌ریزی هفتگی شمسی",
+
     "app.details": "جزئیات کامل",
 
     "about.eyebrow": "درباره من",
     "about.title": "علی میری — توسعه‌دهنده اپلیکیشن (استودیو داکتو)",
-    "about.bio": "من علی میری هستم، توسعه‌دهنده نرم‌افزار متمرکز بر اکوسیستم فلاتر و اندروید. با اشتیاق زیاد به ایجاد برنامه‌های کاربردی، بهینه‌سازی عملکرد، و پیاده‌سازی معماری تمیز (Clean Architecture) فعالیت می‌کنم. چهار اپلیکیشن منتشر شده من (کاغذ، آرتیلو، دانک و شاخص) با استقبال خوب کاربران در مارکت مایکت مواجه شده‌اند.",
+    "about.bio": "من علی میری هستم، توسعه‌دهنده نرم‌افزار متمرکز بر اکوسیستم فلاتر و اندروید. با اشتیاق زیاد به ایجاد برنامه‌های کاربردی، بهینه‌سازی عملکرد، و پیاده‌سازی معماری تمیز (Clean Architecture) فعالیت می‌کنم. پنج اپلیکیشن منتشر شده من (کاغذ، آرتیلو، دانک، شاخص و مدام) با استقبال خوب کاربران در مارکت مایکت مواجه شده‌اند.",
 
     "kaghazPage.heroBadge": "اپلیکیشن آموزشی معلمان",
     "kaghazPage.title": "کاغذ (Kaghaz)",
@@ -128,6 +140,18 @@ const i18n = {
     "shakhesPage.spec4Title": "رتبه‌بندی و پیشرفت",
     "shakhesPage.spec4Desc": "سیستم رتبه‌بندی، ردیابی پیشرفت و چالش‌های روزانه برای ایجاد انگیزه و رقابت سالم.",
 
+    "modamPage.heroBadge": "اپلیکیشن مطالعه و برنامه‌ریزی درسی",
+    "modamPage.title": "مدام (Modam)",
+    "modamPage.subtitle": "روتین مطالعه‌ات را با زنجیره‌ی روزانه، تایمر پیشرفت و برنامه‌ریزی هفتگی شمسی به یک عادت پایدار تبدیل کن.",
+    "modamPage.spec1Title": "زنجیره‌ی روزانه (استریک)",
+    "modamPage.spec1Desc": "هر روز که به هدف مطالعه‌ات برسی، زنجیره‌ات بلندتر می‌شود. هر ۷ روز موفقیت یک ژتون «انجماد» می‌گیری تا یک روز جاافتاده را جبران کنی و زنجیره‌ات نشکند.",
+    "modamPage.spec2Title": "تایمر مطالعه با حلقه‌ی پیشرفت",
+    "modamPage.spec2Desc": "تمرکز شو، زمان‌سنج را روشن کن و پیشرفت لحظه‌به‌لحظه‌ات را روی حلقه‌ی رنگی مخصوص هر درس ببین. پایان هر جلسه، حالِ خوبِ مطالعه و یک یادداشت برایت ثبت می‌شود.",
+    "modamPage.spec3Title": "۱۵ نشان دستاورد + امتیاز XP",
+    "modamPage.spec3Desc": "با عبور از رکوردهای زمانی، حفظ زنجیره و پیشرفت در هر درس، نشان‌های مخفی و ویژه باز می‌شوند — همراه انیمیشن جشن و کاغذرنگی.",
+    "modamPage.spec4Title": "برنامه‌ریزی هفتگی شمسی",
+    "modamPage.spec4Desc": "تقویم جلالی با تاریخ‌های فارسی، برنامه‌ریزی جلسات هفتگی و «برنامه‌ساز خودکار» که قبل از امتحان هر درس، بلوک‌های مطالعه را برایت می‌چیند.",
+
     "contact.eyebrow": "ارتباط با من",
     "contact.title": "آغاز یک همکاری یا پروژه جدید",
     "contact.desc": "برای پیشنهاد همکاری، مشاوره‌های نرم‌افزاری یا صحبت درباره پروژه‌ها می‌توانید از طریق راه‌های زیر با من در ارتباط باشید.",
@@ -148,6 +172,7 @@ const i18n = {
     "nav.artilo": "Artilo",
     "nav.danak": "Danak",
     "nav.shakhes": "Shakhes",
+    "nav.modam": "Modam",
 
     "hero.badge": "Dakto Studio — Flutter & Android Developer",
     "hero.title1": "Crafting High Quality",
@@ -155,7 +180,7 @@ const i18n = {
     "hero.subtitle": "Designing, building, and shipping production-ready Android apps with Clean Architecture & Flutter. Focused on sleek UX and performance.",
     "hero.ctaPrimary": "Explore Apps",
     "hero.ctaSecondary": "Get in Touch",
-    "hero.stat1Val": "4+",
+    "hero.stat1Val": "5+",
     "hero.stat1Lbl": "Shipped Apps",
     "hero.stat2Val": "100%",
     "hero.stat2Lbl": "Quality Focus",
@@ -174,10 +199,13 @@ const i18n = {
     "preview.shakhesTitle": "Shakhes",
     "preview.shakhesDesc": "Offline quiz game with 18+ categories & fun modes",
     "preview.shakhesTag": "Game",
+    "preview.modamTitle": "Modam",
+    "preview.modamDesc": "Study & lesson planning with a progress streak",
+    "preview.modamTag": "Education",
 
     "apps.eyebrow": "Shipped Products",
     "apps.title": "My Apps",
-    "apps.desc": "Four standalone apps built with Clean Architecture & Flutter, published on Myket.",
+    "apps.desc": "Five standalone apps built with Clean Architecture & Flutter, published on Myket.",
 
     "kaghaz.title": "Kaghaz — Smart Assistant for Teachers",
     "kaghaz.tagline": "Classroom management, attendance & grade tracking",
@@ -211,11 +239,19 @@ const i18n = {
     "shakhes.pill3": "Fully Offline",
     "shakhes.pill4": "Ranking & Challenges",
 
+    "modam.title": "Modam — Study & Lesson Planning",
+    "modam.tagline": "Turn your study routine into a lasting habit",
+    "modam.desc": "Modam turns a study routine from a passing decision into a lasting habit — with simple daily logging, a progress streak, and achievements that make you want to keep going.",
+    "modam.pill1": "Daily Streak",
+    "modam.pill2": "Study Timer with Progress Ring",
+    "modam.pill3": "15 Achievement Badges + XP",
+    "modam.pill4": "Jalali Weekly Planning",
+
     "app.details": "Full Details",
 
     "about.eyebrow": "About Developer",
     "about.title": "Ali Miri — Mobile App Engineer (Dakto Studio)",
-    "about.bio": "I am Ali Miri, a software developer specialized in the Flutter & Android ecosystem. Passionate about building intuitive mobile apps, optimizing UI performance, and implementing Clean Architecture. My four published apps (Kaghaz, Artilo, Danak, and Shakhes) have earned great user feedback on the Myket store.",
+    "about.bio": "I am Ali Miri, a software developer specialized in the Flutter & Android ecosystem. Passionate about building intuitive mobile apps, optimizing UI performance, and implementing Clean Architecture. My five published apps (Kaghaz, Artilo, Danak, Shakhes, and Modam) have earned great user feedback on the Myket store.",
 
     "kaghazPage.heroBadge": "Educational App for Teachers",
     "kaghazPage.title": "Kaghaz",
@@ -264,6 +300,18 @@ const i18n = {
     "shakhesPage.spec3Desc": "No internet needed. Play anytime, anywhere. Perfect for travel and idle moments.",
     "shakhesPage.spec4Title": "Ranking & Progress",
     "shakhesPage.spec4Desc": "Ranking system, progress tracking, and daily challenges for motivation and healthy competition.",
+
+    "modamPage.heroBadge": "Study & Lesson Planning App",
+    "modamPage.title": "Modam",
+    "modamPage.subtitle": "Turn your study routine into a lasting habit with daily streaks, a progress timer, and Persian (Jalali) weekly planning.",
+    "modamPage.spec1Title": "Daily Streak",
+    "modamPage.spec1Desc": "Each day you hit your study target, your streak grows. Every 7 days of success you earn a \"freeze\" token to cover one missed day and keep your streak alive.",
+    "modamPage.spec2Title": "Study Timer with Progress Ring",
+    "modamPage.spec2Desc": "Stay focused, start the timer, and watch your live progress on a color ring unique to each subject. Each session logs a note and your study mood.",
+    "modamPage.spec3Title": "15 Achievement Badges + XP",
+    "modamPage.spec3Desc": "Beat time records, keep streaks, and progress in each subject to unlock hidden badges — complete with a confetti celebration animation.",
+    "modamPage.spec4Title": "Jalali Weekly Planning",
+    "modamPage.spec4Desc": "A Persian (Jalali) calendar with Persian dates, weekly session planning, and an auto-planner that builds your study blocks before each exam.",
 
     "contact.eyebrow": "Get in Touch",
     "contact.title": "Let's Start a Project or Collaboration",

@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>try{var t=localStorage.getItem("app_theme");if(t!=="dark"&&t!=="light"){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";}document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","dark");}</script>
   <title>داکتو (Dakto) — توسعه‌دهنده اپلیکیشن‌های اندرویدی با فلاتر | علی میری</title>
-  <meta name="description" content="داکتو، استودیو توسعه اپلیکیشن‌های اندرویدی با فلاتر. سازنده کاغذ (مدیریت کلاس و معلم‌یار)، آرتیلو (هنر و پادکست)، دانک (آموزش مدیریت) و شاخص (بازی کوییز).">
-  <meta name="keywords" content="داکتو, Dakto, علی میری, توسعه‌دهنده اندروید, فلاتر, اپلیکیشن موبایل, کاغذ, معلم یار, مدیریت کلاس, آرتیلو, دانک, شاخص">
+  <meta name="description" content="داکتو، استودیو توسعه اپلیکیشن‌های اندرویدی با فلاتر. سازنده کاغذ (مدیریت کلاس و معلم‌یار)، آرتیلو (هنر و پادکست)، دانک (آموزش مدیریت)، شاخص (بازی کوییز) و مدام (مطالعه و برنامه‌ریزی درسی).">
+  <meta name="keywords" content="داکتو, Dakto, علی میری, توسعه‌دهنده اندروید, فلاتر, اپلیکیشن موبایل, کاغذ, معلم یار, مدیریت کلاس, آرتیلو, دانک, شاخص, مدام">
   <meta name="author" content="Ali Miri">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e9e0cb">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0d0d0a">
@@ -16,7 +16,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="داکتو (Dakto) — توسعه‌دهنده اپلیکیشن‌های اندرویدی">
-  <meta property="og:description" content="داکتو، استودیو توسعه اپلیکیشن‌های اندرویدی با فلاتر. سازنده کاغذ (مدیریت کلاس و معلم‌یار)، آرتیلو، دانک و شاخص.">
+  <meta property="og:description" content="داکتو، استودیو توسعه اپلیکیشن‌های اندرویدی با فلاتر. سازنده کاغذ (مدیریت کلاس و معلم‌یار)، آرتیلو، دانک، شاخص و مدام (مطالعه و برنامه‌ریزی درسی).">
   <meta property="og:url" content="https://dakto.ir/">
   <meta property="og:site_name" content="داکتو Dakto">
   <meta property="og:locale" content="fa_IR">
@@ -25,7 +25,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="داکتو (Dakto) — توسعه‌دهنده اپلیکیشن‌های اندرویدی">
-  <meta name="twitter:description" content="داکتو، استودیو توسعه اپلیکیشن‌های اندرویدی با فلاتر. سازنده کاغذ، آرتیلو، دانک و شاخص.">
+  <meta name="twitter:description" content="داکتو، استودیو توسعه اپلیکیشن‌های اندرویدی با فلاتر. سازنده کاغذ، آرتیلو، دانک، شاخص و مدام (مطالعه و برنامه‌ریزی درسی).">
   <meta name="twitter:image" content="https://dakto.ir/assets/profile.jpg">
 
   <!-- Hreflang -->
@@ -41,7 +41,7 @@
     "name": "داکتو Dakto",
     "alternateName": ["Dakto", "علی میری", "Ali Miri"],
     "url": "https://dakto.ir",
-    "description": "استودیو توسعه اپلیکیشن‌های اندرویدی با فلاتر. سازنده کاغذ (مدیریت کلاس و معلم‌یار)، آرتیلو، دانک و شاخص.",
+    "description": "استودیو توسعه اپلیکیشن‌های اندرویدی با فلاتر. سازنده کاغذ (مدیریت کلاس و معلم‌یار)، آرتیلو، دانک، شاخص و مدام (مطالعه و برنامه‌ریزی درسی).",
     "inLanguage": "fa",
     "potentialAction": {
       "@type": "SearchAction",
@@ -164,42 +164,33 @@
             </div>
           </div>
 
-          <!-- Hero App Stack Cards -->
+          <!-- Hero App Stack — circular tiles (logo + name only).
+               auto-fill grid keeps the layout stable as apps are added;
+               adding a new app = one more <a> that wraps in cleanly. -->
           <div class="hero-visual">
-            <a href="kaghaz.html" class="preview-card">
-              <img src="assets/kaghaz-logo.png" alt="Kaghaz Logo" class="preview-icon">
-              <div class="preview-info">
-                <h4 data-i18n="preview.kaghazTitle">کاغذ (Kaghaz)</h4>
-                <p data-i18n="preview.kaghazDesc">مدیریت کلاس، حضور و غیاب و نمرات معلمان</p>
-              </div>
-              <span class="preview-tag tag-kaghaz" data-i18n="preview.kaghazTag">آموزشی</span>
+            <a href="kaghaz.html" class="preview-card" aria-label="کاغذ">
+              <div class="preview-icon"><img src="assets/kaghaz-logo.png" alt="کاغذ Logo"></div>
+              <h4 class="preview-name" data-i18n="preview.kaghazTitle">کاغذ</h4>
             </a>
 
-            <a href="artilo.html" class="preview-card">
-              <img src="assets/artilo-logo.png" alt="Artilo Logo" class="preview-icon">
-              <div class="preview-info">
-                <h4 data-i18n="preview.artiloTitle">آرتیلو (Artilo)</h4>
-                <p data-i18n="preview.artiloDesc">پلتفرم هنر، موسیقی و پادکست‌های صوتی</p>
-              </div>
-              <span class="preview-tag tag-artilo" data-i18n="preview.artiloTag">رسانه</span>
+            <a href="artilo.html" class="preview-card" aria-label="آرتیلو">
+              <div class="preview-icon"><img src="assets/artilo-logo.png" alt="آرتیلو Logo"></div>
+              <h4 class="preview-name" data-i18n="preview.artiloTitle">آرتیلو</h4>
             </a>
 
-            <a href="danak.html" class="preview-card">
-              <img src="assets/danak-logo.png" alt="Danak Logo" class="preview-icon">
-              <div class="preview-info">
-                <h4 data-i18n="preview.danakTitle">دانک (Danak)</h4>
-                <p data-i18n="preview.danakDesc">یادگیری مدیریت، تئوری‌ها و بزرگان مدیریت</p>
-              </div>
-              <span class="preview-tag tag-kaghaz" data-i18n="preview.danakTag">آموزشی</span>
+            <a href="danak.html" class="preview-card" aria-label="دانک">
+              <div class="preview-icon"><img src="assets/danak-logo.png" alt="دانک Logo"></div>
+              <h4 class="preview-name" data-i18n="preview.danakTitle">دانک</h4>
             </a>
 
-            <a href="shakhes.html" class="preview-card">
-              <img src="assets/shakhes-logo.png" alt="Shakhes Logo" class="preview-icon">
-              <div class="preview-info">
-                <h4 data-i18n="preview.shakhesTitle">شاخص (Shakhes)</h4>
-                <p data-i18n="preview.shakhesDesc">بازی کوییز آفلاین با ۱۸+ کتگوری و گیم‌مودهای جذاب</p>
-              </div>
-              <span class="preview-tag tag-artilo" data-i18n="preview.shakhesTag">بازی</span>
+            <a href="shakhes.html" class="preview-card" aria-label="شاخص">
+              <div class="preview-icon"><img src="assets/shakhes-logo.png" alt="شاخص Logo"></div>
+              <h4 class="preview-name" data-i18n="preview.shakhesTitle">شاخص</h4>
+            </a>
+
+            <a href="modam.html" class="preview-card" aria-label="مدام">
+              <div class="preview-icon"><img src="assets/modam-logo.png" alt="مدام Logo"></div>
+              <h4 class="preview-name" data-i18n="preview.modamTitle">مدام</h4>
             </a>
           </div>
 
@@ -396,6 +387,51 @@
           </div>
         </article>
 
+        <!-- Modam Card -->
+        <article class="app-card-featured card-kaghaz">
+          <div class="card-header-row">
+            <div class="app-brand">
+              <img src="assets/modam-logo.png" alt="مدام" class="app-logo-img">
+              <div class="app-meta">
+                <h3 data-i18n="modam.title">مدام — مطالعه و برنامه‌ریزی درسی</h3>
+                <span class="app-category kaghaz" data-i18n="modam.tagline">روتین مطالعه را به عادت پایدار تبدیل کن</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a href="modam.html" class="btn btn-secondary" data-i18n="app.details">جزئیات کامل</a>
+            </div>
+          </div>
+
+          <p class="app-card-desc" data-i18n="modam.desc">
+            مدام روتین مطالعه را از یک تصمیم زودگذر به یک عادت پایدار تبدیل می‌کند؛ با ثبت ساده‌ی روزانه، زنجیره‌ی پیشرفت (استریک) و نشان‌هایی که خواستنِ ادامه دادن را در تو بیدار می‌کنند.
+          </p>
+
+          <div class="feature-pills">
+            <div class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="modam.pill1">استریک و زنجیره‌ی روزانه</span>
+            </div>
+            <div class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="modam.pill2">تایمر مطالعه با حلقه‌ی پیشرفت</span>
+            </div>
+            <div class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="modam.pill3">۱۵ نشان دستاورد + امتیاز XP</span>
+            </div>
+            <div class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="modam.pill4">برنامه‌ریزی هفتگی شمسی</span>
+            </div>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="screenshot-item"><img src="assets/modam/1.png" alt="اسکرین‌شات ۱ مدام" loading="lazy"></div>
+            <div class="screenshot-item"><img src="assets/modam/2.png" alt="اسکرین‌شات ۲ مدام" loading="lazy"></div>
+            <div class="screenshot-item"><img src="assets/modam/3.png" alt="اسکرین‌شات ۳ مدام" loading="lazy"></div>
+          </div>
+        </article>
+
       </div>
     </section>
     <section id="about" class="about-section">
@@ -479,6 +515,7 @@
           <a href="artilo.html" data-i18n="nav.artilo">آرتیلو</a>
           <a href="danak.html" data-i18n="nav.danak">دانک</a>
           <a href="shakhes.html" data-i18n="nav.shakhes">شاخص</a>
+          <a href="modam.html" data-i18n="nav.modam">مدام</a>
         </div>
 
         <div class="footer-col">

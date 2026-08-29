@@ -856,9 +856,90 @@ body.nav-locked {
 .tag-kaghaz { color: var(--accent-kaghaz); }
 .tag-artilo { color: var(--accent-artilo); }
 
+/* ---------- ORGANIC FLOATING HERO APP TILES ----------
+   auto-fill grid keeps the layout stable as apps are added;
+   each tile is a CIRCLE showing the app logo + name only.
+   Gentle per-tile rotation/float vars keep an organic feel;
+   a new app = one more <a> that wraps in cleanly. */
+.hero-visual {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  align-items: center;
+}
+
+.hero-visual .preview-card {
+  --fx: 0px;        /* gentle horizontal drift */
+  --fy: -13px;      /* vertical float depth */
+  --rot: 0deg;      /* per-card rotation */
+  --fdur: 13s;      /* float duration (slow) */
+  --fdel: 0s;       /* float delay for variety */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 150px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 14px;
+  text-align: center;
+  rotate: var(--rot);
+  will-change: translate;
+}
+
+/* per-tile organic scatter/float differences (kept in CSS) */
+.hero-visual .preview-card:nth-child(1) { --fy:-14px; --rot:-2.2deg; --fdur:11s; --fdel:0s; }
+.hero-visual .preview-card:nth-child(2) { --fy:-18px; --rot:1.8deg;  --fdur:14s; --fdel:0.7s; }
+.hero-visual .preview-card:nth-child(3) { --fy:-12px; --rot:-1.4deg; --fdur:12s; --fdel:1.2s; }
+.hero-visual .preview-card:nth-child(4) { --fy:-16px; --rot:2.4deg;  --fdur:9s;  --fdel:0.4s; }
+.hero-visual .preview-card:nth-child(5) { --fy:-11px; --rot:-1.8deg; --fdur:13s; --fdel:1.5s; }
+
+/* circular app logo inside the tile */
+.hero-visual .preview-icon {
+  width: 58%;
+  height: auto;                    /* override base 60px to keep a true circle */
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--border);
+  background: var(--bg-glass);
+  flex-shrink: 0;
+}
+.hero-visual .preview-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-visual .preview-name {
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+/* hide the base top-accent bar — it looks odd on a circular tile */
+.hero-visual .preview-card::before { display: none; }
+
+/* float only after the card has revealed (visible) */
+.hero-visual .preview-card.visible {
+  animation: floatCard var(--fdur, 13s) ease-in-out var(--fdel, 0s) infinite;
+}
+
+@keyframes floatCard {
+  0%, 100% { translate: var(--fx, 0) 0; }
+  50%      { translate: var(--fx, 0) var(--fy, -13px); }
+}
+
 @media (max-width: 960px) {
   .hero-grid { grid-template-columns: 1fr; }
-  .hero-visual { display: grid; grid-template-columns: 1fr 1fr; }
+  /* keep grid flowing, but soften horizontal scatter to avoid overflow */
+  .hero-visual .preview-card { --fx: 0px; }
 }
 
 @media (max-width: 600px) {
@@ -1609,9 +1690,7 @@ body.nav-locked {
 }
 
 @media (min-width: 961px) {
-  .hero-visual .preview-card:nth-child(odd) { rotate: -1.2deg; }
-  .hero-visual .preview-card:nth-child(even) { rotate: 1.2deg; }
-  .hero-visual .preview-card:hover { rotate: 0deg; }
+  /* scattered per-card rotate now handled in the hero card rules above */
 }
 
 .card-actions {

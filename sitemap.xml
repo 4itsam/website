@@ -52,4 +52,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://dakto.ir/shakhes.html?lang=en" />
   </url>
 
+  <!-- Modam (مدام — مطالعه و برنامه‌ریزی درسی) -->
+  <url>
+    <loc>https://dakto.ir/modam.html</loc>
+    <lastmod>2025-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://dakto.ir/modam.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dakto.ir/modam.html?lang=en" />
+  </url>
+
 </urlset>
