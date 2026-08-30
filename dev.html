@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>try{var t=localStorage.getItem("app_theme");if(t!=="dark"&&t!=="light"){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";}document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","dark");}</script>
+  <title>علی میری — توسعه‌دهنده فلاتر و اندروید | داکتو</title>
+  <meta name="description" content="علی میری، توسعه‌دهنده نرم‌افزار متمرکز بر اکوسیستم فلاتر و اندروید. سازنده اپلیکیشن‌های کاغذ، آرتیلو، دانک، شاخص و مدام.">
+  <meta name="keywords" content="علی میری, Ali Miri, توسعه‌دهنده فلاتر, Flutter Developer, اندروید, Android, داکتو, Dakto, Clean Architecture, Riverpod">
+  <meta name="author" content="Ali Miri">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e9e0cb">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0d0d0a">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dakto.ir/dev.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="علی میری — توسعه‌دهنده فلاتر و اندروید | داکتو">
+  <meta property="og:description" content="علی میری، توسعه‌دهنده نرم‌افزار متمرکز بر اکوسیستم فلاتر و اندروید. سازنده اپلیکیشن‌های کاغذ، آرتیلو، دانک، شاخص و مدام.">
+  <meta property="og:url" content="https://dakto.ir/dev.html">
+  <meta property="og:site_name" content="داکتو Dakto">
+  <meta property="og:locale" content="fa_IR">
+  <meta property="og:image" content="https://dakto.ir/assets/profile.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="علی میری — توسعه‌دهنده فلاتر و اندروید">
+  <meta name="twitter:description" content="علی میری، توسعه‌دهنده نرم‌افزار متمرکز بر اکوسیستم فلاتر و اندروید.">
+  <meta name="twitter:image" content="https://dakto.ir/assets/profile.jpg">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="fa" href="https://dakto.ir/dev.html">
+  <link rel="alternate" hreflang="en" href="https://dakto.ir/dev.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://dakto.ir/dev.html">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ali Miri",
+    "alternateName": "علی میری",
+    "url": "https://dakto.ir/dev.html",
+    "jobTitle": "Flutter & Android Developer",
+    "description": "توسعه‌دهنده نرم‌افزار متمرکز بر اکوسیستم فلاتر و اندروید با تمرکز بر معماری تمیز و تجربه کاربری بی‌نقص.",
+    "knowsAbout": ["Flutter", "Dart", "Android", "Clean Architecture", "Riverpod", "REST API", "Git"],
+    "sameAs": [
+      "https://github.com/4itsam",
+      "https://t.me/itsAliMiri"
+    ],
+    "image": "https://dakto.ir/assets/profile.jpg"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "خانه",
+        "item": "https://dakto.ir/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "توسعه‌دهنده",
+        "item": "https://dakto.ir/dev.html"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&family=VT323&family=Lalezar&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="topbar">
+    <div class="wrap">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">DK</span>
+        <span class="nav-name">Dakto</span>
+      </a>
+
+      
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <div class="lang-toggle" role="group" aria-label="Language Toggle">
+          <button type="button" class="lang-btn" data-lang="fa" aria-pressed="true">فا</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="mobile-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle Navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-menu" id="nav-menu" aria-label="Menu">
+    <div class="nav-menu-head">
+      <span class="nav-menu-title">DAKTO<span class="nav-menu-cursor">▊</span></span>
+      <button type="button" class="nav-menu-close" aria-label="Close menu" aria-controls="nav-menu">&times;</button>
+    </div>
+    <div class="nav-menu-body">
+          <a href="index.html" class="nav-link" data-i18n="nav.home">خانه</a>
+          <a href="index.html#apps" class="nav-link" data-i18n="nav.apps">محصولات</a>
+          <a href="dev.html" class="nav-link active" data-i18n="nav.about">توسعه‌دهنده</a>
+          <a href="index.html#contact" class="nav-link" data-i18n="nav.contact">تماس</a>
+    </div>
+    <div class="nav-menu-foot">
+      <div class="lang-toggle" role="group" aria-label="Language Toggle">
+        <button type="button" class="lang-btn" data-lang="fa" aria-pressed="true">فا</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+
+    <!-- ============ DEV HERO ============ -->
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="page-hero-grid">
+          <div>
+            <div class="badge" style="color: var(--accent-indigo); border-color: var(--accent-indigo-glow);">
+              <span class="badge-dot" style="background: var(--accent-indigo); box-shadow: 0 0 8px var(--accent-indigo);"></span>
+              <span data-i18n="devPage.heroBadge">توسعه‌دهنده فلاتر و اندروید</span>
+            </div>
+
+            <h1 class="hero-title" style="margin-bottom: 16px;" data-i18n="devPage.title">علی میری (Ali Miri)</h1>
+            <p class="hero-subtitle" data-i18n="devPage.subtitle">
+              توسعه‌دهنده نرم‌افزار متمرکز بر اکوسیستم فلاتر و اندروید. علاقه‌مند به ایجاد برنامه‌های کاربردی با معماری تمیز و تجربه کاربری بی‌نقص.
+            </p>
+
+            <div class="hero-actions">
+              <a href="index.html#apps" class="btn btn-primary" data-i18n="devPage.ctaApps">مشاهده اپلیکیشن‌ها</a>
+              <a href="index.html#contact" class="btn btn-secondary" data-i18n="devPage.ctaContact">ارتباط با من</a>
+            </div>
+          </div>
+
+          <div style="text-align: center;">
+            <img src="assets/profile.jpg" alt="علی میری - توسعه‌دهنده داکتو" class="app-hero-logo" onerror="this.outerHTML='<div class=\'avatar-placeholder\'>DK</div>'">
+          </div>
+        </div>
+
+        <!-- About Detail -->
+        <div style="margin-top: 60px;">
+          <div class="section-eyebrow" data-i18n="devPage.aboutEyebrow">درباره من</div>
+          <h2 class="section-title" data-i18n="devPage.aboutTitle">چه کسی هستم؟</h2>
+          <p class="about-bio" data-i18n="devPage.aboutBio" style="max-width: 800px;">
+            من علی میری هستم، توسعه‌دهنده نرم‌افزار با تمرکز بر اکوسیستم فلاتر و اندروید. از ابتدای مسیر حرفه‌ای‌ام، همیشه به دنبال یادگیری و بهبود مستمر بوده‌ام. تجربه ساخت اپلیکیشن‌های متنوع از ابزارهای آموزشی تا پلتفرم‌های رسانه‌ای، به من کمک کرده تا درک عمیقی از نیازهای کاربران و چالش‌های فنی توسعه موبایل پیدا کنم.
+          </p>
+          <p class="about-bio" data-i18n="devPage.aboutBio2" style="max-width: 800px;">
+            فلسفه من در توسعه نرم‌افزار سادگی، عملکرد و کیفیت است. هر اپلیکیشنی که می‌سازم با اصول Clean Architecture و مدیریت استیت Riverpod پیاده‌سازی می‌شود تا کد تمیز، قابل تست و مقیاس‌پذیر باشد.
+          </p>
+        </div>
+
+        <!-- Skills Matrix -->
+        <div style="margin-top: 60px;">
+          <div class="section-eyebrow" data-i18n="devPage.skillsEyebrow">مهارت‌ها و تخصص‌ها</div>
+          <h2 class="section-title" data-i18n="devPage.skillsTitle">تکنولوژی‌هایی که با آن‌ها کار می‌کنم</h2>
+
+          <div class="skills-matrix">
+            <div class="skill-category-card">
+              <h4 data-i18n="devPage.skillCat1Title">核心技术</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Android</span>
+                <span class="tech-tag">Kotlin</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <h4 data-i18n="devPage.skillCat2Title">معماری و مدیریت state</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">Clean Architecture</span>
+                <span class="tech-tag">Riverpod</span>
+                <span class="tech-tag">BLoC</span>
+                <span class="tech-tag">Provider</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <h4 data-i18n="devPage.skillCat3Title">ابزارها و سرویس‌ها</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">SQLite</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <h4 data-i18n="devPage.skillCat4Title">طراحی و تجربه کاربری</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">Material Design</span>
+                <span class="tech-tag">Responsive UI</span>
+                <span class="tech-tag">Dark/Light Theme</span>
+                <span class="tech-tag">RTL Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div style="margin-top: 60px;">
+          <div class="section-eyebrow" data-i18n="devPage.timelineEyebrow">مسیر حرفه‌ای</div>
+          <h2 class="section-title" data-i18n="devPage.timelineTitle">تجربیات و دستاوردها</h2>
+
+          <div class="timeline-container">
+            <div class="timeline-card-item">
+              <div class="timeline-card-dot"></div>
+              <div class="timeline-card-content">
+                <div class="timeline-date-tag" data-i18n="devPage.tl1Date">۱۴۰۲ — اکنون</div>
+                <h4 data-i18n="devPage.tl1Title">توسعه‌دهنده مستقل فلاتر (استودیو داکتو)</h4>
+                <p data-i18n="devPage.tl1Desc">طراحی و توسعه ۵ اپلیکیشن مستقل اندرویدی با فلاتر و انتشار در مارکت مایکت. تمرکز بر معماری تمیز، عملکرد بهینه و تجربه کاربری بی‌نقص.</p>
+              </div>
+            </div>
+
+            <div class="timeline-card-item">
+              <div class="timeline-card-dot"></div>
+              <div class="timeline-card-content">
+                <div class="timeline-date-tag" data-i18n="devPage.tl2Date">۱۴۰۱</div>
+                <h4 data-i18n="devPage.tl2Title">انتشار اولین اپلیکیشن — کاغذ</h4>
+                <p data-i18n="devPage.tl2Desc">ساخت و انتشار کاغذ، اپلیکیشن مدیریت کلاس و معلم‌یار. اولین تجربه حرفه‌ای در چرخه کامل توسعه، از ایده‌پردازی تا انتشار در مارکت.</p>
+              </div>
+            </div>
+
+            <div class="timeline-card-item">
+              <div class="timeline-card-dot"></div>
+              <div class="timeline-card-content">
+                <div class="timeline-date-tag" data-i18n="devPage.tl3Date">۱۴۰۰</div>
+                <h4 data-i18n="devPage.tl3Title">شروع یادگیری فلاتر</h4>
+                <p data-i18n="devPage.tl3Desc">ورود به دنیای فلاتر و توسعه موبایل. یادگیری اصول Clean Architecture، Riverpod و بهترین شیوه‌های توسعه اندروید.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div style="margin-top: 60px;">
+          <div class="hero-stats" style="justify-content: center; gap: 60px; border: 2px solid var(--border); border-radius: var(--radius-xl); padding: 40px; background: var(--bg-card);">
+            <div class="stat-item" style="align-items: center;">
+              <span class="stat-val" data-i18n="devPage.stat1Val">۵+</span>
+              <span class="stat-lbl" data-i18n="devPage.stat1Lbl">اپلیکیشن منتشرشده</span>
+            </div>
+            <div class="stat-item" style="align-items: center;">
+              <span class="stat-val" data-i18n="devPage.stat2Val">۱۰۰٪</span>
+              <span class="stat-lbl" data-i18n="devPage.stat2Lbl">رضایت کاربران</span>
+            </div>
+            <div class="stat-item" style="align-items: center;">
+              <span class="stat-val" data-i18n="devPage.stat3Val">Flutter</span>
+              <span class="stat-lbl" data-i18n="devPage.stat3Lbl">تکنولوژی اصلی</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="logo-icon">DK</span>
+            <span class="nav-name">Dakto</span>
+          </div>
+          <p data-i18n="footer.desc">توسعه‌دهنده اپلیکیشن‌های موبایل با فلاتر و اندروید.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer.col1">ناوبری</h5>
+          <a href="index.html" data-i18n="nav.home">خانه</a>
+          <a href="dev.html" data-i18n="nav.about">توسعه‌دهنده</a>
+          <a href="index.html#contact" data-i18n="nav.contact">تماس</a>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer.col2">اپلیکیشن‌ها</h5>
+          <a href="kaghaz.html" data-i18n="nav.kaghaz">کاغذ</a>
+          <a href="artilo.html" data-i18n="nav.artilo">آرتیلو</a>
+          <a href="danak.html" data-i18n="nav.danak">دانک</a>
+          <a href="shakhes.html" data-i18n="nav.shakhes">شاخص</a>
+          <a href="modam.html" data-i18n="nav.modam">مدام</a>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer.col3">شبکه‌ها</h5>
+          <a href="https://github.com/4itsam" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://t.me/itsAliMiri" target="_blank" rel="noopener">Telegram</a>
+          <a href="mailto:itsAliMiri84@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer.copy">© ۲۰۲۵ داکتو (Dakto). تمامی حقوق محفوظ است.</span>
+        <span data-i18n="footer.note">طراحی‌شده با فلاتر و استانداردهای وب مدرن.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
