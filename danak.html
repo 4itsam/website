@@ -8,13 +8,13 @@
   <meta name="description" content="دانک، اپلیکیشن آموزش مدیریت با تئوری‌های کلاسیک و مدرن، تاریخچه علم مدیریت و معرفی بزرگانی مانند پیتر دراکر و هنری فایول.">
   <meta name="keywords" content="دانک, Danak, مدیریت, تئوری مدیریت, پیتر دراکر, هنری فایول, تاریخچه مدیریت, آموزش مدیریت, دانشجوی مدیریت">
   <meta name="author" content="Ali Miri">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e9e0cb">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0d0d0a">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f8fafc">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#090b10">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://dakto.ir/danak.html">
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
   <meta property="og:title" content="دانک — یادگیری تئوری‌ها و بزرگان مدیریت | داکتو">
   <meta property="og:description" content="دانک، اپلیکیشن آموزش مدیریت با تئوری‌های کلاسیک و مدرن، تاریخچه و بزرگان علم مدیریت.">
   <meta property="og:url" content="https://dakto.ir/danak.html">
@@ -88,7 +88,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&family=VT323&family=Lalezar&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
@@ -103,7 +103,12 @@
         <span class="nav-name">Dakto</span>
       </a>
 
-      
+      <nav class="nav-desktop" aria-label="Desktop Navigation">
+        <a href="index.html" class="nav-link" data-i18n="nav.home">خانه</a>
+        <a href="index.html#apps" class="nav-link active" data-i18n="nav.apps">محصولات</a>
+        <a href="dev.html" class="nav-link" data-i18n="nav.about">توسعه‌دهنده</a>
+        <a href="index.html#contact" class="nav-link" data-i18n="nav.contact">تماس</a>
+      </nav>
 
       <div class="nav-actions">
         <button type="button" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
@@ -115,22 +120,29 @@
           <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
         </div>
         <button class="mobile-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle Navigation">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <svg class="icon-hamburger" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
         </button>
       </div>
     </div>
   </header>
 
-  <nav class="nav-menu" id="nav-menu" aria-label="Menu">
+  <!-- Backdrop for mobile drawer -->
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+
+  <nav class="nav-menu" id="nav-menu" aria-label="Mobile Navigation">
     <div class="nav-menu-head">
-      <span class="nav-menu-title">DAKTO<span class="nav-menu-cursor">▊</span></span>
-      <button type="button" class="nav-menu-close" aria-label="Close menu" aria-controls="nav-menu">&times;</button>
+      <div class="nav-logo">
+        <span class="logo-icon">DK</span>
+        <span class="nav-name">Dakto</span>
+      </div>
+      <button type="button" class="nav-menu-close" aria-label="Close menu">&times;</button>
     </div>
     <div class="nav-menu-body">
-          <a href="index.html" class="nav-link" data-i18n="nav.home">خانه</a>
-          <a href="index.html#apps" class="nav-link" data-i18n="nav.apps">محصولات</a>
-          <a href="dev.html" class="nav-link" data-i18n="nav.about">توسعه‌دهنده</a>
-          <a href="index.html#contact" class="nav-link" data-i18n="nav.contact">تماس</a>
+      <a href="index.html" class="nav-link" data-i18n="nav.home">خانه</a>
+      <a href="index.html#apps" class="nav-link active" data-i18n="nav.apps">محصولات</a>
+      <a href="dev.html" class="nav-link" data-i18n="nav.about">توسعه‌دهنده</a>
+      <a href="index.html#contact" class="nav-link" data-i18n="nav.contact">تماس</a>
     </div>
     <div class="nav-menu-foot">
       <div class="lang-toggle" role="group" aria-label="Language Toggle">

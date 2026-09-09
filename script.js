@@ -473,24 +473,39 @@ try {
 setLanguage(initialLang);
 
 // Mobile Nav Toggle
+const navBackdrop = document.querySelector(".nav-backdrop");
+const navMenuClose = document.querySelector(".nav-menu-close");
+
 const closeNavMenu = () => {
-  navMenu.classList.remove("open");
-  mobileToggle.setAttribute("aria-expanded", "false");
+  if (navMenu) navMenu.classList.remove("open");
+  if (mobileToggle) mobileToggle.setAttribute("aria-expanded", "false");
+  if (navBackdrop) navBackdrop.classList.remove("active");
   document.body.classList.remove("nav-locked");
 };
 
-// Close button inside the full-screen mobile menu
-const navMenuClose = document.querySelector(".nav-menu-close");
+const openNavMenu = () => {
+  if (navMenu) navMenu.classList.add("open");
+  if (mobileToggle) mobileToggle.setAttribute("aria-expanded", "true");
+  if (navBackdrop) navBackdrop.classList.add("active");
+  document.body.classList.add("nav-locked");
+  if (navMenuClose) navMenuClose.focus();
+};
+
 if (navMenuClose) {
   navMenuClose.addEventListener("click", closeNavMenu);
 }
 
+if (navBackdrop) {
+  navBackdrop.addEventListener("click", closeNavMenu);
+}
+
 if (mobileToggle && navMenu) {
   mobileToggle.addEventListener("click", () => {
-    const isOpen = navMenu.classList.toggle("open");
-    mobileToggle.setAttribute("aria-expanded", String(isOpen));
-    document.body.classList.toggle("nav-locked", isOpen);
-    if (isOpen && navMenuClose) navMenuClose.focus();
+    if (navMenu.classList.contains("open")) {
+      closeNavMenu();
+    } else {
+      openNavMenu();
+    }
   });
 
   // Close menu on link click
@@ -498,14 +513,13 @@ if (mobileToggle && navMenu) {
     link.addEventListener("click", closeNavMenu);
   });
 
-  // Close on outside click (kept as a safety net; the full-screen overlay
-  // covers the viewport while open, so the real close paths are the
-  // close button, link taps, and Esc), and when resizing back to desktop
+  // Close on outside click and Esc key
   document.addEventListener("click", (e) => {
     if (
       navMenu.classList.contains("open") &&
       !navMenu.contains(e.target) &&
-      !mobileToggle.contains(e.target)
+      !mobileToggle.contains(e.target) &&
+      e.target !== navBackdrop
     ) {
       closeNavMenu();
     }
