@@ -139,7 +139,7 @@
     <section class="hero">
       <div class="wrap">
         <div class="hero-grid">
-          
+
           <div class="hero-content">
             <div class="badge">
               <span class="badge-dot"></span>
@@ -176,34 +176,63 @@
             </div>
           </div>
 
-          <!-- Hero App Stack — circular tiles (logo + name only).
-               auto-fill grid keeps the layout stable as apps are added;
-               adding a new app = one more <a> that wraps in cleanly. -->
-          <div class="hero-visual">
-            <a href="kaghaz.html" class="preview-card" aria-label="کاغذ">
-              <div class="preview-icon"><img src="assets/kaghaz-logo.png" alt="کاغذ Logo"></div>
-              <h4 class="preview-name" data-i18n="preview.kaghazTitle">کاغذ</h4>
-            </a>
+          <!-- App dock: one row per app + an "all apps" link. -->
+          <div class="hero-panel">
+            <div class="hero-apps">
+              <a href="kaghaz.html" class="app-tile">
+                <span class="app-tile-logo"><img src="assets/kaghaz-logo.png" alt="" width="42" height="42"></span>
+                <span class="app-tile-text">
+                  <span class="app-tile-name" data-i18n="preview.kaghazTitle">کاغذ</span>
+                  <span class="app-tile-tag" data-i18n="preview.kaghazTag">آموزشی</span>
+                </span>
+                <svg class="app-tile-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
+              </a>
 
-            <a href="artilo.html" class="preview-card" aria-label="آرتیلو">
-              <div class="preview-icon"><img src="assets/artilo-logo.png" alt="آرتیلو Logo"></div>
-              <h4 class="preview-name" data-i18n="preview.artiloTitle">آرتیلو</h4>
-            </a>
+              <a href="artilo.html" class="app-tile">
+                <span class="app-tile-logo"><img src="assets/artilo-logo.png" alt="" width="42" height="42"></span>
+                <span class="app-tile-text">
+                  <span class="app-tile-name" data-i18n="preview.artiloTitle">آرتیلو</span>
+                  <span class="app-tile-tag" data-i18n="preview.artiloTag">رسانه و سرگرمی</span>
+                </span>
+                <svg class="app-tile-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
+              </a>
 
-            <a href="danak.html" class="preview-card" aria-label="دانک">
-              <div class="preview-icon"><img src="assets/danak-logo.png" alt="دانک Logo"></div>
-              <h4 class="preview-name" data-i18n="preview.danakTitle">دانک</h4>
-            </a>
+              <a href="danak.html" class="app-tile">
+                <span class="app-tile-logo"><img src="assets/danak-logo.png" alt="" width="42" height="42"></span>
+                <span class="app-tile-text">
+                  <span class="app-tile-name" data-i18n="preview.danakTitle">دانک</span>
+                  <span class="app-tile-tag" data-i18n="preview.danakTag">آموزشی</span>
+                </span>
+                <svg class="app-tile-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
+              </a>
 
-            <a href="shakhes.html" class="preview-card" aria-label="شاخص">
-              <div class="preview-icon"><img src="assets/shakhes-logo.png" alt="شاخص Logo"></div>
-              <h4 class="preview-name" data-i18n="preview.shakhesTitle">شاخص</h4>
-            </a>
+              <a href="shakhes.html" class="app-tile">
+                <span class="app-tile-logo"><img src="assets/shakhes-logo.png" alt="" width="42" height="42"></span>
+                <span class="app-tile-text">
+                  <span class="app-tile-name" data-i18n="preview.shakhesTitle">شاخص</span>
+                  <span class="app-tile-tag" data-i18n="preview.shakhesTag">بازی</span>
+                </span>
+                <svg class="app-tile-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
+              </a>
 
-            <a href="modam.html" class="preview-card" aria-label="مدام">
-              <div class="preview-icon"><img src="assets/modam-logo.png" alt="مدام Logo"></div>
-              <h4 class="preview-name" data-i18n="preview.modamTitle">مدام</h4>
-            </a>
+              <a href="modam.html" class="app-tile">
+                <span class="app-tile-logo"><img src="assets/modam-logo.png" alt="" width="42" height="42"></span>
+                <span class="app-tile-text">
+                  <span class="app-tile-name" data-i18n="preview.modamTitle">مدام</span>
+                  <span class="app-tile-tag" data-i18n="preview.modamTag">آموزشی</span>
+                </span>
+                <svg class="app-tile-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
+              </a>
+
+              <a href="#apps" class="app-tile app-tile--more">
+                <span class="app-tile-more-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>
+                </span>
+                <span class="app-tile-text">
+                  <span class="app-tile-name" data-i18n="hero.allApps">همه محصولات</span>
+                </span>
+              </a>
+            </div>
           </div>
 
         </div>
@@ -213,77 +242,81 @@
     <!-- ============ APPS SHOWCASE ============ -->
     <section id="apps" class="app-showcase">
       <div class="wrap">
-        <div class="section-eyebrow" data-i18n="apps.eyebrow">محصولات منتشرشده</div>
-        <h2 class="section-title" data-i18n="apps.title">اپلیکیشن‌های من</h2>
-        <p class="section-desc" data-i18n="apps.desc">
-          محصولات نرم‌افزاری مستقل که با معماری تمیز و فلاتر پیاده‌سازی شده و در دسترس کاربران قرار گرفته‌اند.
-        </p>
+        <div class="section-head">
+          <div class="section-eyebrow" data-i18n="apps.eyebrow">محصولات منتشرشده</div>
+          <h2 class="section-title" data-i18n="apps.title">اپلیکیشن‌های من</h2>
+          <p class="section-desc" data-i18n="apps.desc">
+            محصولات نرم‌افزاری مستقل که با معماری تمیز و فلاتر پیاده‌سازی شده و در دسترس کاربران قرار گرفته‌اند.
+          </p>
+        </div>
 
-        <!-- Kaghaz Card -->
-        <article class="app-card-featured card-kaghaz">
-          <div class="card-header-row">
+        <!-- Kaghaz -->
+        <article class="app-row card-kaghaz">
+          <div class="app-row-body">
             <div class="app-brand">
-              <img src="assets/kaghaz-logo.png" alt="کاغذ" class="app-logo-img">
+              <img src="assets/kaghaz-logo.png" alt="کاغذ" class="app-logo-img" width="56" height="56" loading="lazy">
               <div class="app-meta">
                 <h3 data-i18n="kaghaz.title">کاغذ — دستیار هوشمند معلمان</h3>
                 <span class="app-category kaghaz" data-i18n="kaghaz.tagline">مدیریت کلاس، حضور و غیاب و ثبت نمرات</span>
               </div>
             </div>
+
+            <p class="app-card-desc" data-i18n="kaghaz.desc">
+              کاغذ یک اپلیکیشن تخصصی برای معلم‌هاست که تمام نیازهای کلاسی اعم از ثبت حضور و غیاب، مدیریت نمرات مستمر و پایانی، و ابزارهای کاربردی مثل تایمر کلاس، گروه‌بندی تصادفی و قرعه‌کشی را در قالبی ساده و شکیل فراهم می‌کند.
+            </p>
+
+            <div class="feature-pills">
+              <div class="pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="kaghaz.pill1">حضور و غیاب هوشمند</span>
+              </div>
+              <div class="pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="kaghaz.pill2">ثبت و تحلیل نمرات</span>
+              </div>
+              <div class="pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="kaghaz.pill3">تایمر و قرعه‌کشی کلاسی</span>
+              </div>
+              <div class="pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="kaghaz.pill4">معماری Riverpod + Clean</span>
+              </div>
+            </div>
+
             <div class="card-actions">
-              <a href="kaghaz.html" class="btn btn-secondary" data-i18n="app.details">جزئیات کامل</a>
+              <a href="kaghaz.html" class="btn btn-secondary">
+                <span data-i18n="app.details">جزئیات کامل</span>
+                <svg class="btn-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
+              </a>
             </div>
           </div>
 
-          <p class="app-card-desc" data-i18n="kaghaz.desc">
-            کاغذ یک اپلیکیشن تخصصی برای معلم‌هاست که تمام نیازهای کلاسی اعم از ثبت حضور و غیاب، مدیریت نمرات مستمر و پایانی، و ابزارهای کاربردی مثل تایمر کلاس، گروه‌بندی تصادفی و قرعه‌کشی را در قالبی ساده و شکیل فراهم می‌کند.
-          </p>
-
-          <div class="feature-pills">
-            <div class="pill">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span data-i18n="kaghaz.pill1">حضور و غیاب هوشمند</span>
+          <div class="app-row-media">
+            <div class="phone-fan">
+              <div class="fan-phone"><div class="screenshot-item"><img src="assets/kaghaz/1.png" alt="اسکرین‌شات ۱ کاغذ" loading="lazy"></div></div>
+              <div class="fan-phone"><div class="screenshot-item"><img src="assets/kaghaz/2.png" alt="اسکرین‌شات ۲ کاغذ" loading="lazy"></div></div>
+              <div class="fan-phone"><div class="screenshot-item"><img src="assets/kaghaz/3.png" alt="اسکرین‌شات ۳ کاغذ" loading="lazy"></div></div>
             </div>
-            <div class="pill">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span data-i18n="kaghaz.pill2">ثبت و تحلیل نمرات</span>
-            </div>
-            <div class="pill">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span data-i18n="kaghaz.pill3">تایمر و قرعه‌کشی کلاسی</span>
-            </div>
-            <div class="pill">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span data-i18n="kaghaz.pill4">معماری Riverpod + Clean</span>
-            </div>
-          </div>
-
-          <div class="gallery-grid">
-            <div class="screenshot-item"><img src="assets/kaghaz/1.png" alt="اسکرین‌شات ۱ کاغذ" loading="lazy"></div>
-            <div class="screenshot-item"><img src="assets/kaghaz/2.png" alt="اسکرین‌شات ۲ کاغذ" loading="lazy"></div>
-            <div class="screenshot-item"><img src="assets/kaghaz/3.png" alt="اسکرین‌شات ۳ کاغذ" loading="lazy"></div>
           </div>
         </article>
 
-        <!-- Artilo Card -->
-        <article class="app-card-featured card-artilo">
-          <div class="card-header-row">
+        <!-- Artilo -->
+        <article class="app-row card-artilo">
+          <div class="app-row-body">
             <div class="app-brand">
-              <img src="assets/artilo-logo.png" alt="آرتیلو" class="app-logo-img">
+              <img src="assets/artilo-logo.png" alt="آرتیلو" class="app-logo-img" width="56" height="56" loading="lazy">
               <div class="app-meta">
                 <h3 data-i18n="artilo.title">آرتیلو — دنیای هنر، موسیقی و پادکست</h3>
                 <span class="app-category artilo" data-i18n="artilo.tagline">پلتفرم شنیداری و تصویری محتوای هنری</span>
               </div>
             </div>
-            <div class="card-actions">
-              <a href="artilo.html" class="btn btn-secondary" data-i18n="app.details">جزئیات کامل</a>
-            </div>
-          </div>
 
-          <p class="app-card-desc" data-i18n="artilo.desc">
-            آرتیلو محیطی لذت‌بخش برای علاقه مندان به هنر، موسیقی و پادکست‌های فارسی است. با پلیر اختصاصی، پخش صوتی باکیفیت، آرشیو برنامه‌ها و طراحی مینیمال و جذاب جهت تجربه کاربری متفاوت.
-          </p>
+            <p class="app-card-desc" data-i18n="artilo.desc">
+              آرتیلو محیطی لذت‌بخش برای علاقه مندان به هنر، موسیقی و پادکست‌های فارسی است. با پلیر اختصاصی، پخش صوتی باکیفیت، آرشیو برنامه‌ها و طراحی مینیمال و جذاب جهت تجربه کاربری متفاوت.
+            </p>
 
-          <div class="feature-pills">
+            <div class="feature-pills">
             <div class="pill">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
               <span data-i18n="artilo.pill1">پلیر صوتی اختصاصی</span>
@@ -302,33 +335,39 @@
             </div>
           </div>
 
-          <div class="gallery-grid">
-            <div class="screenshot-item"><img src="assets/artilo/1.png" alt="اسکرین‌شات ۱ آرتیلو" loading="lazy"></div>
-            <div class="screenshot-item"><img src="assets/artilo/2.png" alt="اسکرین‌شات ۲ آرتیلو" loading="lazy"></div>
-            <div class="screenshot-item"><img src="assets/artilo/3.png" alt="اسکرین‌شات ۳ آرتیلو" loading="lazy"></div>
+            <div class="card-actions">
+              <a href="artilo.html" class="btn btn-secondary">
+                <span data-i18n="app.details">جزئیات کامل</span>
+                <svg class="btn-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="app-row-media">
+            <div class="phone-fan">
+              <div class="fan-phone"><div class="screenshot-item"><img src="assets/artilo/1.png" alt="اسکرین‌شات ۱ آرتیلو" loading="lazy"></div></div>
+              <div class="fan-phone"><div class="screenshot-item"><img src="assets/artilo/2.png" alt="اسکرین‌شات ۲ آرتیلو" loading="lazy"></div></div>
+              <div class="fan-phone"><div class="screenshot-item"><img src="assets/artilo/3.png" alt="اسکرین‌شات ۳ آرتیلو" loading="lazy"></div></div>
+            </div>
           </div>
         </article>
 
-        <!-- Danak Card -->
-        <article class="app-card-featured card-danak">
-          <div class="card-header-row">
+        <!-- Danak -->
+        <article class="app-row card-danak">
+          <div class="app-row-body">
             <div class="app-brand">
-              <img src="assets/danak-logo.png" alt="دانک" class="app-logo-img">
+              <img src="assets/danak-logo.png" alt="دانک" class="app-logo-img" width="56" height="56" loading="lazy">
               <div class="app-meta">
                 <h3 data-i18n="danak.title">دانک — یادگیری مدیریت</h3>
                 <span class="app-category danak" data-i18n="danak.tagline">تئوری‌ها، تاریخ و بزرگان مدیریت</span>
               </div>
             </div>
-            <div class="card-actions">
-              <a href="danak.html" class="btn btn-secondary" data-i18n="app.details">جزئیات کامل</a>
-            </div>
-          </div>
 
-          <p class="app-card-desc" data-i18n="danak.desc">
-            دانک اپلیکیشنی آموزشی برای یادگیری مفاهیم مدیریتی است. در این اپلیکیشن با تئوری‌های کلاسیک و مدرن مدیریت، تاریخچه مدیریت و بزرگانی همچون پیتر دراکر، هنری فایول و تیلور آشنا می‌شوید.
-          </p>
+            <p class="app-card-desc" data-i18n="danak.desc">
+              دانک اپلیکیشنی آموزشی برای یادگیری مفاهیم مدیریتی است. در این اپلیکیشن با تئوری‌های کلاسیک و مدرن مدیریت، تاریخچه مدیریت و بزرگانی همچون پیتر دراکر، هنری فایول و تیلور آشنا می‌شوید.
+            </p>
 
-          <div class="feature-pills">
+            <div class="feature-pills">
             <div class="pill">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
               <span data-i18n="danak.pill1">تئوری‌های مدیریتی</span>
@@ -347,31 +386,37 @@
             </div>
           </div>
 
-          <div class="gallery-grid">
-            <div class="screenshot-item"><img src="assets/danak/1.png" alt="اسکرین‌شات ۱ دانک" loading="lazy"></div>
-            <div class="screenshot-item"><img src="assets/danak/2.png" alt="اسکرین‌شات ۲ دانک" loading="lazy"></div>
-            <div class="screenshot-item"><img src="assets/danak/3.png" alt="اسکرین‌شات ۳ دانک" loading="lazy"></div>
+            <div class="card-actions">
+              <a href="danak.html" class="btn btn-secondary">
+                <span data-i18n="app.details">جزئیات کامل</span>
+                <svg class="btn-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="app-row-media">
+            <div class="phone-fan">
+              <div class="fan-phone"><div class="screenshot-item"><img src="assets/danak/1.png" alt="اسکرین‌شات ۱ دانک" loading="lazy"></div></div>
+              <div class="fan-phone"><div class="screenshot-item"><img src="assets/danak/2.png" alt="اسکرین‌شات ۲ دانک" loading="lazy"></div></div>
+              <div class="fan-phone"><div class="screenshot-item"><img src="assets/danak/3.png" alt="اسکرین‌شات ۳ دانک" loading="lazy"></div></div>
+            </div>
           </div>
         </article>
 
-        <!-- Shakhes Card -->
-        <article class="app-card-featured card-shakhes">
-          <div class="card-header-row">
+        <!-- Shakhes -->
+        <article class="app-row card-shakhes">
+          <div class="app-row-body">
             <div class="app-brand">
-              <img src="assets/shakhes-logo.png" alt="شاخص" class="app-logo-img">
+              <img src="assets/shakhes-logo.png" alt="شاخص" class="app-logo-img" width="56" height="56" loading="lazy">
               <div class="app-meta">
                 <h3 data-i18n="shakhes.title">شاخص — بازی کوییز هوشمند</h3>
                 <span class="app-category shakhes" data-i18n="shakhes.tagline">بیش از ۱۸ کتگوری مختلف با گیم‌مودهای جذاب</span>
               </div>
             </div>
-            <div class="card-actions">
-              <a href="shakhes.html" class="btn btn-secondary" data-i18n="app.details">جزئیات کامل</a>
-            </div>
-          </div>
 
-          <p class="app-card-desc" data-i18n="shakhes.desc">
-            شاخص یک بازی کوییز آفلاین است که با بیش از ۱۸ کتگوری متنوع از علوم تا تاریخ و ورزش، تجربه‌ای سرگرم‌کننده و چالشی را ارائه می‌دهد. با گیم‌مودهای مختلف، رتبه‌بندی و قابلیت بازی بدون اینترنت.
-          </p>
+            <p class="app-card-desc" data-i18n="shakhes.desc">
+              شاخص یک بازی کوییز آفلاین است که با بیش از ۱۸ کتگوری متنوع از علوم تا تاریخ و ورزش، تجربه‌ای سرگرم‌کننده و چالشی را ارائه می‌دهد. با گیم‌مودهای مختلف، رتبه‌بندی و قابلیت بازی بدون اینترنت.
+            </p>
 
           <div class="feature-pills">
             <div class="pill">
@@ -392,55 +437,71 @@
             </div>
           </div>
 
-          <div class="gallery-grid">
-            <div class="screenshot-item"><img src="assets/shakhes/1.png" alt="اسکرین‌شات ۱ شاخص" loading="lazy"></div>
-            <div class="screenshot-item"><img src="assets/shakhes/2.png" alt="اسکرین‌شات ۲ شاخص" loading="lazy"></div>
-            <div class="screenshot-item"><img src="assets/shakhes/3.png" alt="اسکرین‌شات ۳ شاخص" loading="lazy"></div>
+            <div class="card-actions">
+              <a href="shakhes.html" class="btn btn-secondary">
+                <span data-i18n="app.details">جزئیات کامل</span>
+                <svg class="btn-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="app-row-media">
+            <div class="phone-fan">
+              <div class="fan-phone"><div class="screenshot-item"><img src="assets/shakhes/1.png" alt="اسکرین‌شات ۱ شاخص" loading="lazy"></div></div>
+              <div class="fan-phone"><div class="screenshot-item"><img src="assets/shakhes/2.png" alt="اسکرین‌شات ۲ شاخص" loading="lazy"></div></div>
+              <div class="fan-phone"><div class="screenshot-item"><img src="assets/shakhes/3.png" alt="اسکرین‌شات ۳ شاخص" loading="lazy"></div></div>
+            </div>
           </div>
         </article>
 
-        <!-- Modam Card -->
-        <article class="app-card-featured card-modam">
-          <div class="card-header-row">
+        <!-- Modam -->
+        <article class="app-row card-modam">
+          <div class="app-row-body">
             <div class="app-brand">
-              <img src="assets/modam-logo.png" alt="مدام" class="app-logo-img">
+              <img src="assets/modam-logo.png" alt="مدام" class="app-logo-img" width="56" height="56" loading="lazy">
               <div class="app-meta">
                 <h3 data-i18n="modam.title">مدام — مطالعه و برنامه‌ریزی درسی</h3>
                 <span class="app-category modam" data-i18n="modam.tagline">روتین مطالعه را به عادت پایدار تبدیل کن</span>
               </div>
             </div>
+
+            <p class="app-card-desc" data-i18n="modam.desc">
+              مدام روتین مطالعه را از یک تصمیم زودگذر به یک عادت پایدار تبدیل می‌کند؛ با ثبت ساده‌ی روزانه، زنجیره‌ی پیشرفت (استریک) و نشان‌هایی که خواستنِ ادامه دادن را در تو بیدار می‌کنند.
+            </p>
+
+            <div class="feature-pills">
+              <div class="pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="modam.pill1">استریک و زنجیره‌ی روزانه</span>
+              </div>
+              <div class="pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="modam.pill2">تایمر مطالعه با حلقه‌ی پیشرفت</span>
+              </div>
+              <div class="pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="modam.pill3">۱۵ نشان دستاورد + امتیاز XP</span>
+              </div>
+              <div class="pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="modam.pill4">برنامه‌ریزی هفتگی شمسی</span>
+              </div>
+            </div>
+
             <div class="card-actions">
-              <a href="modam.html" class="btn btn-secondary" data-i18n="app.details">جزئیات کامل</a>
+              <a href="modam.html" class="btn btn-secondary">
+                <span data-i18n="app.details">جزئیات کامل</span>
+                <svg class="btn-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
+              </a>
             </div>
           </div>
 
-          <p class="app-card-desc" data-i18n="modam.desc">
-            مدام روتین مطالعه را از یک تصمیم زودگذر به یک عادت پایدار تبدیل می‌کند؛ با ثبت ساده‌ی روزانه، زنجیره‌ی پیشرفت (استریک) و نشان‌هایی که خواستنِ ادامه دادن را در تو بیدار می‌کنند.
-          </p>
-
-          <div class="feature-pills">
-            <div class="pill">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span data-i18n="modam.pill1">استریک و زنجیره‌ی روزانه</span>
+          <div class="app-row-media">
+            <div class="phone-fan">
+              <div class="fan-phone"><div class="screenshot-item"><img src="assets/modam/1.png" alt="اسکرین‌شات ۱ مدام" loading="lazy"></div></div>
+              <div class="fan-phone"><div class="screenshot-item"><img src="assets/modam/2.png" alt="اسکرین‌شات ۲ مدام" loading="lazy"></div></div>
+              <div class="fan-phone"><div class="screenshot-item"><img src="assets/modam/3.png" alt="اسکرین‌شات ۳ مدام" loading="lazy"></div></div>
             </div>
-            <div class="pill">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span data-i18n="modam.pill2">تایمر مطالعه با حلقه‌ی پیشرفت</span>
-            </div>
-            <div class="pill">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span data-i18n="modam.pill3">۱۵ نشان دستاورد + امتیاز XP</span>
-            </div>
-            <div class="pill">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span data-i18n="modam.pill4">برنامه‌ریزی هفتگی شمسی</span>
-            </div>
-          </div>
-
-          <div class="gallery-grid">
-            <div class="screenshot-item"><img src="assets/modam/1.png" alt="اسکرین‌شات ۱ مدام" loading="lazy"></div>
-            <div class="screenshot-item"><img src="assets/modam/2.png" alt="اسکرین‌شات ۲ مدام" loading="lazy"></div>
-            <div class="screenshot-item"><img src="assets/modam/3.png" alt="اسکرین‌شات ۳ مدام" loading="lazy"></div>
           </div>
         </article>
 
@@ -448,14 +509,14 @@
     </section>
     <section id="about" class="about-section">
       <div class="wrap">
-            <div class="about-box">
-          <img src="assets/profile.jpg" alt="علی میری - توسعه‌دهنده داکتو" class="profile-avatar" onerror="this.outerHTML='<div class=\'avatar-placeholder\'>DK</div>'">
-          
-          <div>
+        <div class="about-box">
+          <img src="assets/profile.jpg" alt="علی میری - توسعه‌دهنده داکتو" class="profile-avatar" width="190" height="190" loading="lazy" onerror="this.outerHTML='<div class=\'avatar-placeholder\'>DK</div>'">
+
+          <div class="about-copy">
             <div class="section-eyebrow" data-i18n="about.eyebrow">درباره من</div>
             <h2 class="section-title" data-i18n="about.title">علی میری — توسعه‌دهنده اپلیکیشن</h2>
             <p class="about-bio" data-i18n="about.bio">
-              من علی میری هستم، توسعه‌دهنده نرم‌افزار متمرکز بر اکوسیستم فلاتر و اندروید. با اشتیاق زیاد به ایجاد برنامه‌های کاربردی، بهینه‌سازی عملکرد، و پیاده‌سازی معماری تمیز (Clean Architecture) فعالیت می‌کنم. دو اپلیکیشن منتشر شده من با استقبال خوب کاربران در مارکت مایکت مواجه شده‌اند.
+              من علی میری هستم، توسعه‌دهنده نرم‌افزار متمرکز بر اکوسیستم فلاتر و اندروید. با اشتیاق زیاد به ایجاد برنامه‌های کاربردی، بهینه‌سازی عملکرد، و پیاده‌سازی معماری تمیز (Clean Architecture) فعالیت می‌کنم. پنج اپلیکیشن منتشر شده من (کاغذ، آرتیلو، دانک، شاخص و مدام) با استقبال خوب کاربران در مارکت مایکت مواجه شده‌اند.
             </p>
 
             <div class="tech-tags">
@@ -478,9 +539,9 @@
     <section id="contact" class="contact-section">
       <div class="wrap">
         <div class="contact-card">
-          <div class="section-eyebrow" style="justify-content: center;" data-i18n="contact.eyebrow">ارتباط با من</div>
+          <div class="section-eyebrow" data-i18n="contact.eyebrow">ارتباط با من</div>
           <h2 class="section-title" data-i18n="contact.title">آغاز یک همکاری یا پروژه جدید</h2>
-          <p class="section-desc" style="margin: 0 auto 32px;" data-i18n="contact.desc">
+          <p class="section-desc" data-i18n="contact.desc">
             برای پیشنهاد همکاری، مشاوره‌های نرم‌افزار یا صحبت درباره پروژه‌ها می‌توانید از طریق راه‌های زیر با من در ارتباط باشید.
           </p>
 
@@ -534,8 +595,8 @@
 
         <div class="footer-col">
           <h5 data-i18n="footer.col3">شبکه‌ها</h5>
-          <a href="https://github.com/alimiri" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://t.me/alimiri_dev" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://github.com/4itsam" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://t.me/itsAliMiri" target="_blank" rel="noopener">Telegram</a>
           <a href="mailto:itsAliMiri84@gmail.com">Email</a>
         </div>
       </div>

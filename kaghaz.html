@@ -179,16 +179,21 @@
   <main>
 
     <!-- ============ APP HERO ============ -->
-    <section class="page-hero">
+    <section class="page-hero accent-kaghaz">
       <div class="wrap">
         <div class="page-hero-grid">
           <div>
-            <div class="badge" style="color: var(--accent-kaghaz); border-color: var(--accent-kaghaz-glow);">
-              <span class="badge-dot" style="background: var(--accent-kaghaz); box-shadow: 0 0 8px var(--accent-kaghaz);"></span>
+            <a class="back-link" href="index.html#apps">
+              <svg class="btn-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
+              <span data-i18n="nav.apps">محصولات</span>
+            </a>
+
+            <div class="badge">
+              <span class="badge-dot"></span>
               <span data-i18n="kaghazPage.heroBadge">اپلیکیشن آموزشی معلمان</span>
             </div>
 
-            <h1 class="hero-title" style="margin-bottom: 16px;" data-i18n="kaghazPage.title">کاغذ (Kaghaz)</h1>
+            <h1 class="page-title" data-i18n="kaghazPage.title">کاغذ (Kaghaz)</h1>
             <p class="hero-subtitle" data-i18n="kaghazPage.subtitle">
               سامانه مدیریت کلاس، حضور و غیاب و ارزیابی دانش‌آموزان با معماری مدرن فلاتر.
             </p>
@@ -202,12 +207,11 @@
                   <img src="assets/cafebazaar.svg" alt="دانلود از کافه‌بازار">
                 </a>
               </div>
-              <a href="index.html#apps" class="btn btn-secondary" data-i18n="nav.home">بازگشت به خانه</a>
             </div>
           </div>
 
-          <div style="text-align: center;">
-            <img src="assets/kaghaz-logo.png" alt="لوگوی کاغذ" class="app-hero-logo">
+          <div class="hero-logo-card">
+            <img src="assets/kaghaz-logo.png" alt="لوگوی کاغذ" class="app-hero-logo" width="190" height="190">
           </div>
         </div>
 
@@ -235,24 +239,31 @@
         </div>
 
         <!-- Screenshots Showcase -->
-        <div style="margin-top: 60px;">
-          <div class="section-eyebrow">گالری تصاویر</div>
-          <h2 class="section-title">محیط اپلیکیشن کاغذ</h2>
+        <div class="section-block">
+          <div class="section-head">
+            <div class="section-eyebrow">گالری تصاویر</div>
+            <h2 class="section-title">محیط اپلیکیشن کاغذ</h2>
+          </div>
 
-          <div class="gallery-grid" style="max-width: 900px; margin: 0 auto;">
-            <div class="screenshot-item"><img src="assets/kaghaz/1.png" alt="اسکرین شات ۱ کاغذ"></div>
-            <div class="screenshot-item"><img src="assets/kaghaz/2.png" alt="اسکرین شات ۲ کاغذ"></div>
-            <div class="screenshot-item"><img src="assets/kaghaz/3.png" alt="اسکرین شات ۳ کاغذ"></div>
+          <div class="gallery-shell">
+            <div class="gallery-grid">
+              <div class="screenshot-item"><img src="assets/kaghaz/1.png" alt="اسکرین شات ۱ کاغذ" loading="lazy"></div>
+              <div class="screenshot-item"><img src="assets/kaghaz/2.png" alt="اسکرین شات ۲ کاغذ" loading="lazy"></div>
+              <div class="screenshot-item"><img src="assets/kaghaz/3.png" alt="اسکرین شات ۳ کاغذ" loading="lazy"></div>
+            </div>
+          </div>
         </div>
 
       </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section" style="padding-bottom: 100px;">
-      <div class="wrap" style="max-width: 900px;">
-        <div class="section-eyebrow">سوالات متداول</div>
-        <h2 class="section-title">پاسخ به سوالات رایج معلمان</h2>
+    <section class="faq-section">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-eyebrow">سوالات متداول</div>
+          <h2 class="section-title">پاسخ به سوالات رایج معلمان</h2>
+        </div>
 
         <div class="faq-accordion">
           <details class="faq-item" open>

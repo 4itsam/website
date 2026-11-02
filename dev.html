@@ -142,16 +142,16 @@
   <main>
 
     <!-- ============ DEV HERO ============ -->
-    <section class="page-hero">
+    <section class="page-hero accent-default">
       <div class="wrap">
         <div class="page-hero-grid">
           <div>
-            <div class="badge" style="color: var(--accent-indigo); border-color: var(--accent-indigo-glow);">
-              <span class="badge-dot" style="background: var(--accent-indigo); box-shadow: 0 0 8px var(--accent-indigo);"></span>
+            <div class="badge">
+              <span class="badge-dot"></span>
               <span data-i18n="devPage.heroBadge">توسعه‌دهنده فلاتر و اندروید</span>
             </div>
 
-            <h1 class="hero-title" style="margin-bottom: 16px;" data-i18n="devPage.title">علی میری (Ali Miri)</h1>
+            <h1 class="page-title" data-i18n="devPage.title">علی میری (Ali Miri)</h1>
             <p class="hero-subtitle" data-i18n="devPage.subtitle">
               توسعه‌دهنده نرم‌افزار متمرکز بر اکوسیستم فلاتر و اندروید. علاقه‌مند به ایجاد برنامه‌های کاربردی با معماری تمیز و تجربه کاربری بی‌نقص.
             </p>
@@ -162,31 +162,35 @@
             </div>
           </div>
 
-          <div style="text-align: center;">
-            <img src="assets/profile.jpg" alt="علی میری - توسعه‌دهنده داکتو" class="app-hero-logo" onerror="this.outerHTML='<div class=\'avatar-placeholder\'>DK</div>'">
+          <div class="hero-logo-card">
+            <img src="assets/profile.jpg" alt="علی میری - توسعه‌دهنده داکتو" class="app-hero-logo" width="190" height="190" onerror="this.outerHTML='<div class=\'avatar-placeholder\'>DK</div>'">
           </div>
         </div>
 
         <!-- About Detail -->
-        <div style="margin-top: 60px;">
-          <div class="section-eyebrow" data-i18n="devPage.aboutEyebrow">درباره من</div>
-          <h2 class="section-title" data-i18n="devPage.aboutTitle">چه کسی هستم؟</h2>
-          <p class="about-bio" data-i18n="devPage.aboutBio" style="max-width: 800px;">
+        <div class="section-block">
+          <div class="section-head">
+            <div class="section-eyebrow" data-i18n="devPage.aboutEyebrow">درباره من</div>
+            <h2 class="section-title" data-i18n="devPage.aboutTitle">چه کسی هستم؟</h2>
+          </div>
+          <p class="about-bio" data-i18n="devPage.aboutBio">
             من علی میری هستم، توسعه‌دهنده نرم‌افزار با تمرکز بر اکوسیستم فلاتر و اندروید. از ابتدای مسیر حرفه‌ای‌ام، همیشه به دنبال یادگیری و بهبود مستمر بوده‌ام. تجربه ساخت اپلیکیشن‌های متنوع از ابزارهای آموزشی تا پلتفرم‌های رسانه‌ای، به من کمک کرده تا درک عمیقی از نیازهای کاربران و چالش‌های فنی توسعه موبایل پیدا کنم.
           </p>
-          <p class="about-bio" data-i18n="devPage.aboutBio2" style="max-width: 800px;">
+          <p class="about-bio" data-i18n="devPage.aboutBio2">
             فلسفه من در توسعه نرم‌افزار سادگی، عملکرد و کیفیت است. هر اپلیکیشنی که می‌سازم با اصول Clean Architecture و مدیریت استیت Riverpod پیاده‌سازی می‌شود تا کد تمیز، قابل تست و مقیاس‌پذیر باشد.
           </p>
         </div>
 
         <!-- Skills Matrix -->
-        <div style="margin-top: 60px;">
-          <div class="section-eyebrow" data-i18n="devPage.skillsEyebrow">مهارت‌ها و تخصص‌ها</div>
-          <h2 class="section-title" data-i18n="devPage.skillsTitle">تکنولوژی‌هایی که با آن‌ها کار می‌کنم</h2>
+        <div class="section-block">
+          <div class="section-head">
+            <div class="section-eyebrow" data-i18n="devPage.skillsEyebrow">مهارت‌ها و تخصص‌ها</div>
+            <h2 class="section-title" data-i18n="devPage.skillsTitle">تکنولوژی‌هایی که با آن‌ها کار می‌کنم</h2>
+          </div>
 
           <div class="skills-matrix">
             <div class="skill-category-card">
-              <h4 data-i18n="devPage.skillCat1Title">核心技术</h4>
+              <h4 data-i18n="devPage.skillCat1Title">تکنولوژی‌های اصلی</h4>
               <div class="tech-tags">
                 <span class="tech-tag">Flutter</span>
                 <span class="tech-tag">Dart</span>
@@ -228,9 +232,11 @@
         </div>
 
         <!-- Timeline -->
-        <div style="margin-top: 60px;">
-          <div class="section-eyebrow" data-i18n="devPage.timelineEyebrow">مسیر حرفه‌ای</div>
-          <h2 class="section-title" data-i18n="devPage.timelineTitle">تجربیات و دستاوردها</h2>
+        <div class="section-block">
+          <div class="section-head">
+            <div class="section-eyebrow" data-i18n="devPage.timelineEyebrow">مسیر حرفه‌ای</div>
+            <h2 class="section-title" data-i18n="devPage.timelineTitle">تجربیات و دستاوردها</h2>
+          </div>
 
           <div class="timeline-container">
             <div class="timeline-card-item">
@@ -263,17 +269,17 @@
         </div>
 
         <!-- Stats -->
-        <div style="margin-top: 60px;">
-          <div class="hero-stats" style="justify-content: center; gap: 60px; border: 2px solid var(--border); border-radius: var(--radius-xl); padding: 40px; background: var(--bg-card);">
-            <div class="stat-item" style="align-items: center;">
+        <div class="section-block">
+          <div class="stats-band">
+            <div class="stat-item">
               <span class="stat-val" data-i18n="devPage.stat1Val">۵+</span>
               <span class="stat-lbl" data-i18n="devPage.stat1Lbl">اپلیکیشن منتشرشده</span>
             </div>
-            <div class="stat-item" style="align-items: center;">
+            <div class="stat-item">
               <span class="stat-val" data-i18n="devPage.stat2Val">۱۰۰٪</span>
               <span class="stat-lbl" data-i18n="devPage.stat2Lbl">رضایت کاربران</span>
             </div>
-            <div class="stat-item" style="align-items: center;">
+            <div class="stat-item">
               <span class="stat-val" data-i18n="devPage.stat3Val">Flutter</span>
               <span class="stat-lbl" data-i18n="devPage.stat3Lbl">تکنولوژی اصلی</span>
             </div>
